@@ -1,6 +1,29 @@
 * {box-sizing:border-box;}
 /*local or web(@import) 글꼴 작성 위치*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@font-face {
+    font-family: '나눔스퀘어L';
+    src: url(../font/NANUMSQUAREL.TTF);
+}
+@font-face {
+    font-family: '나눔스퀘어R';
+    src: url(../font/NANUMSQUARER.TTF);
+}
+@font-face {
+    font-family: '나눔스퀘어EXTRABOLD';
+    src: url(../font/NANUMSQUAREEB.TTF);
+}
+@font-face {
+    font-family: '나눔스퀘어BOLD';
+    src: url(../font/NANUMSQUAREB.TTF);
+}
+@font-face {
+    font-family: 'abril';
+    src: url(../font/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: '소미체';
+    src: url(../font/나눔손글씨\ 소미체.TTF);
+}
 /* reset.css */
 html,body, /*구조태그*/
 h1,h2,h3,h4,h5,h6,p,blockquote,address, /*block*/
@@ -8,10 +31,10 @@ span,strong,em,q,sub,sup,del,s,a,img, /*inline*/
 div,header,nav,aside,main,footer,article,figure,figcaption,section, 
 table,thead,tbody,tfoot,tr,th,td,ul,ol,li,dl,dt,dd, /*묶어주는 태그*/
 form,fieldset,legend,input,select,option,button,label,textarea {
-    font-family: 'Noto Sans KR', sans-serif;
     margin:0; padding:0; line-height:1.0;
     font-size:16px; font-style:normal; font-weight:normal;
     text-decoration:none;
+    font-family:'나눔스퀘어R'; 
 }
 th {text-ailgn:left;}
 table,tr,th,td {border-collase:collase;}
