@@ -1,0 +1,5 @@
+@media screen and (max-width:1300px) {
+    main #skill .container {height:700px;}
+    main #skill .container li {width:48%;} /*화면크기 최대1400px 일때 까지 화면 상의 비율 48%로 하겠다 */
+    main #home h1 img {width: 80%;}
+}

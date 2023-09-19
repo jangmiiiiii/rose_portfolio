@@ -1,0 +1,120 @@
+body, html {scroll-behavior: smooth;}
+/* 반응형 대비 최소 제한 너비 설정 */
+header, main {min-width: 900px;}
+/* header */
+header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.10) 100%);
+    position: fixed; left: 0; top: 0; width: 100%; z-index: 999;
+}
+header nav {
+    width: 1300px; margin: 0 auto;
+    padding: 27px 360px;
+}
+header nav .gnb {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .gnb a:last-child {margin-right: 0;}
+header nav .gnb a:hover {
+    color: #efaed5;}
+header nav .gnb a {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* #home */
+main {}
+/* main > * {padding: 0 300px;} main의 모든 자식요소들  */
+main #home { width:1920px; height: 960px; overflow: hidden;}
+main #home .homebg{    
+    background:url(../images/sky_blue.jpg);
+text-align: center;  margin: 0 auto;}
+main #home .homebg h1{
+    /* width: 100%;
+    padding-top: 348px; */
+    width: 100%; height: 100%; margin: 0 auto;
+    padding-top: 426px;
+}
+main #home .homebg h1 img {}
+
+main #home .homebg .hometxt {
+    width: 958px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+main #home .homebg .hometxt p{
+    color: #fff;
+    font-size: 1.25rem;
+}
+main #home .homebg .hometxt p em{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+main #home .homebg .flower{
+    width: 370px; height: 476px; margin: 0 auto;
+    position: relative; top: 0px;
+    animation:rose_move 8s ease-in-out alternate infinite;
+}
+main #home .homebg .flower img{ 
+    width: 100%;
+
+}
+@keyframes rose_move {
+    0% {transform: rotate(10deg)}
+    100% {transform: rotate(-3deg)}
+}
+main #home .homebg .hombtm{}
+main #home .homebg .hombtm p{}
+main #home .homebg .hombtm img{}
+/* 마우스스크롤 css */
+main #home .mouse {
+    position: absolute; left: 50%; bottom: 30px;
+    transform: translateX(-50%);
+}
+main #home .mouse img {animation: mouse_move 1s linear alternate infinite;}
+@keyframes mouse_move {
+    0% {transform: translateY(0)}
+    100% {transform: translateY(-30px)}
+}
+/* 마우스 css 끝 */
+
+/* #profile */
+main #profile {
+    width: 100%; height: 960px; margin: 0 auto;
+    position: relative;}
+main #profile .profile_bg { 
+    width: 770px; height: 660px;
+    background-image: url(../images/profilebg.png);
+}
+main #profile .container {
+}
+main #profile .container .profile_left {
+}
+main #profile .container .profile_left h1 {}
+main #profile .container .profile_left .profileimg {
+    width: 405px; height: 500px;
+}
+main #profile .container .profile_left .profileimg img {
+    width: 100%;
+}
+main #profile .container .profile_right {}
+main #profile .container .profile_right h2 {}
+main #profile .container .profile_right h2 ul {}
+/* aboutme */
+main #profile .container .profile_right h2 ul .aboutme {}
+main #profile .container .profile_right h2 ul .aboutme h3 {}
+main #profile .container .profile_right h2 ul .aboutme h3 ul {}
+main #profile .container .profile_right h2 ul .aboutme h3 ul li {}
+main #profile .container .profile_right h2 ul .aboutme h3 ul li p {}
+main #profile .container .profile_right h2 ul .aboutme h3 ul li span {}
+main #profile .container .profile_right h2 ul .certificare {}
+main #profile .container .profile_right h2 ul .certificare h3 {}
+main #profile .container .profile_right h2 ul .certificare h3 li {}
+main #profile .container .profile_right h2 ul .certificare h3 li span {}
+
+/* #project_web1 */
