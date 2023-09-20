@@ -16,6 +16,7 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <style>
+        /* sns 팝업시작 */
         #popup {
             position:fixed; left:0; top:0;
             width:100%; height:100vh;
@@ -27,6 +28,7 @@
             background:aqua; margin:100px auto 0;
         }
         #popup .contents img {width:100%;}
+        /* sns 팝업 끝 */
     </style>
 </head>
 <body>
@@ -149,11 +151,13 @@
                 </div>
             </div>
         </section>
+        <!-- 팝업 sns -->
         <div id="popup" class="popup_sns">
             <div class="contents">
                 <img src="" alt="">
             </div>
         </div>
+        <!-- 팝업 sns 끝 -->
         <div class="design">
             <h2>DESIGN</h2>
             <section class="design" id="sns_design">
@@ -264,7 +268,7 @@
     </main>
     <script src="./script/index.js"></script>
     <script>
-
+        // sns 팝업 시작
         const popup = document.querySelector('#popup')
         const popup_img = document.querySelector('#popup img')
         const sns_a = document.querySelectorAll('.sns a')
@@ -283,7 +287,7 @@
         popup.addEventListener('click',function(){
             popup.style.display = 'none'
         })
-
+        //sns 팝업 끝
     </script>
 </body> 
 </html>
