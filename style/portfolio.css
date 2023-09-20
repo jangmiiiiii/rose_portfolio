@@ -41,7 +41,7 @@ main #home .homebg h1{
 main #home .homebg h1 img {}
 
 main #home .homebg .hometxt {
-    width: 830px; margin: 0 auto;
+    width: 1000px; margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -84,7 +84,7 @@ main #home .mouse img {animation: mouse_move 1s linear alternate infinite;}
 /* 마우스 css 끝 */
 
 /* #profile */
-main #profile {background: wheat;
+main #profile {
     width: 100%; height: 960px; margin: 0 auto;
     position: relative;
 }
@@ -134,7 +134,7 @@ main #profile .container .profile_txt .profile_left .profileimg img {
     bottom: 100px;
 
 }
-main #profile .container .profile_txt .profile_right {background:lavender;
+main #profile .container .profile_txt .profile_right {
     width: 635px;
     display: flex;
     flex-flow: column nowrap;
@@ -143,12 +143,13 @@ main #profile .container .profile_txt .profile_right {background:lavender;
 main #profile .container .profile_txt .profile_right h2 {
     font-family: '소미체';
     font-size: 3.437rem;
+    padding-bottom: 30px;
 }
 main #profile .container .profile_txt .profile_right .all {
     display: flex;
     justify-content: space-between;
 }
-main #profile .container .profile_txt .profile_right ul > li > h3 {background: aqua;
+main #profile .container .profile_txt .profile_right ul > li > h3 {
     font-size: 1.25rem;
     font-weight: 700;
     padding-bottom: 25px;
@@ -157,16 +158,10 @@ main #profile .container .profile_txt .profile_right ul > li > h3 {background: a
 main #profile .container .profile_txt .profile_right .left {
 
 }
-main #profile .container .profile_txt .profile_right .left > li {}
-main #profile .container .profile_txt .profile_right .left > li > ul {}
-main #profile .container .profile_txt .profile_right .left > li > ul > li {}
-main #profile .container .profile_txt .profile_right .left > li > ul > li > p {}
-main #profile .container .profile_txt .profile_right .left > li > ul > li > span {}
-/* aboutme */
-main #profile .container .profile_txt .profile_right .left .aboutme {}
-main #profile .container .profile_txt .profile_right .left .aboutme h3 {}
-main #profile .container .profile_txt .profile_right .left .aboutme ul {}
-main #profile .container .profile_txt .profile_right .left .aboutme ul > li { background: lawngreen;
+main #profile .container .profile_txt .profile_right .left > li {
+    padding-bottom: 50px;
+}
+main #profile .container .profile_txt .profile_right .left .aboutme ul > li {
     display: flex;
     padding-bottom:20px ;
 }
@@ -175,28 +170,43 @@ main #profile .container .profile_txt .profile_right .left .aboutme ul > li > p 
     font-weight: 700;
 }
 main #profile .container .profile_txt .profile_right .left .aboutme ul li span {}
-main #profile .container .profile_txt .profile_right .all .left .certificare {background: wheat;}
 main #profile .container .profile_txt .profile_right .all .left .certificare > ul {}
 main #profile .container .profile_txt .profile_right .all .left .certificare > ul > li:first-child {
     padding-bottom: 20px;
 }
-main #profile .container .profile_txt .profile_right .all .left .certificare > ul > li > p {}
+main #profile .container .profile_txt .profile_right .all .left .certificare > ul > li > p {
+    font-size:0.9rem ;
+    color: #777;
+    padding-bottom: 2px;
+}
 main #profile .container .profile_txt .profile_right .all .left .certificare > ul > li > span {
     font-weight: 700;
 }
 
-
-main #profile .container .profile_txt .right {}
-main #profile .container .profile_txt .right > li:first-child {
-
-}
-main #profile .container .profile_txt .right > li > h3 {}
-main #profile .container .profile_txt .right > li > p {
+/* 소개글 우측--------------EDUCATION / EXPERIENCE */
+main #profile .container .profile_txt .right  {
     padding-bottom: 20px;            
 }
-main #profile .container .profile_txt .right > li > p strong {
+main #profile .container .profile_txt .right li {}
+main #profile .container .profile_txt .right li > h3 {}
+main #profile .container .profile_txt .right li > ul {
+    padding-bottom: 50px;
+}
+main #profile .container .profile_txt .right li > ul > li {
+    padding-bottom: 20px;
+}
+main #profile .container .profile_txt .right li > ul > li > p { 
+    font-size:0.9rem ;
+    color: #777;
+    padding-bottom: 2px;
+}
+main #profile .container .profile_txt .right li > ul > li > span {
     font-weight: 700;
 }
+main #profile .container .profile_txt .right .experience > ul > li:last-child {
+    padding-bottom: 0;
+}
+/* ----------------------------SKILL------------------------------ */
 main #profile .container .profile_txt .skill {}
 main #profile .container .profile_txt .skill ul {
     display: flex;
@@ -207,7 +217,7 @@ main #profile .container .profile_txt .skill ul li {}
 main #profile .container .profile_txt .skill ul li img {}
 
 /* sns */
-main #sns {background: lightblue;
+main section {background: lightblue;
     width: 100%; height: 960px;
     margin: 0 auto;
 }
@@ -215,7 +225,7 @@ main #sns .popup {}
 main #sns .popup img {}
 main #sns p {}
 main #sns .contents,main #banner .contents, main #detail .contents , main #cardNews .contents{width:1300px; margin: 0 auto;}
-main #sns .contents img {
+main section .contents img {
     background: antiquewhite;
     width: 300px; height: 300px;
     border-radius: 20px;
