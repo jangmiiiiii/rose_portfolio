@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="./style/portfolio.css">
     <link rel="stylesheet" href="./style/portfolio_ani.css">
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css">
-
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
 </head>
 <body>
     <header>
@@ -136,72 +137,87 @@
                 </div>
             </div>
         </section>
-        <section class="design" id="sns_design">
-            <div class="sns">
-                <h3>SNS DESIGN</h3>
-                <div class="contents">
-                    <a href="#" class="sns1"></a>
-                    <a href="#" class="sns2"></a>
-                    <a href="#" class="sns3"></a>
-                    <a href="#" class="sns4"></a>
-                    <a href="#" class="sns5"></a>
-                    <a href="#" class="sns6"></a>
-                    <a href="#" class="sns7"></a>
-                    <a href="#" class="sns8"></a>
+        <div class="design">
+            <h2>DESIGN</h2>
+            <section class="design" id="sns_design">
+                <div class="sns">
+                    <h3>SNS DESIGN</h3>
+                    <div class="contents">
+                        <a href="#" class="sns1"></a>
+                        <a href="#" class="sns2"></a>
+                        <a href="#" class="sns3"></a>
+                        <a href="#" class="sns4"></a>
+                        <a href="#" class="sns5"></a>
+                        <a href="#" class="sns6"></a>
+                        <a href="#" class="sns7"></a>
+                        <a href="#" class="sns8"></a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="design" id="banner_design">
-            <div class="banner">
-                <h3>BANNER DESIGN</h3>
-                <div class="contents">
-                    <a href="#" class="banner1"></a>
-                    <a href="#" class="banner2"></a>
-                    <a href="#" class="banner3"></a>
-                    <a href="#" class="banner4"></a>
+            </section>
+            <section class="design" id="banner_design">
+                <div class="banner">
+                    <h3>BANNER DESIGN</h3>
+                    <div class="contents">
+                        <a href="#" class="banner1"></a>
+                        <a href="#" class="banner2"></a>
+                        <a href="#" class="banner3"></a>
+                        <a href="#" class="banner4"></a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="design" id="detail_design">
-            <div class="detail">
-                <h3>DETAIL DESIGN</h3>
-                <div class="contents">
-                    <a href="#" class="detail1"></a>
-                    <a href="#" class="detail2"></a>
-                    <a href="#" class="detail3"></a>
-                    <a href="#" class="detail4"></a>
+            </section>
+            <section class="design" id="detail_design">
+                <div class="detail">
+                    <h3>DETAIL DESIGN</h3>
+                    <div class="swiper-container detail_all">
+                        <div class="swiper" id="detail_slide">
+                            <div class="swiper-wrapper detail_contents">
+                                <div class="swiper-slide slide1"></div>
+                                <div class="swiper-slide slide2"></div>
+                                <div class="swiper-slide slide3"></div>
+                                <div class="swiper-slide slide4"></div>
+                            </div>
+                        </div>
+                        <!--필요 시 사용(선택)-->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="design" id="cardnews_design">
-            <h3>CARD-NEWS DESIGN</h3>
-            <div class="swiper-container cardl">
-                <!--필수-->
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">slide1</div>
-                    <div class="swiper-slide slide2">slide2</div>
-                    <div class="swiper-slide slide3">slide3</div>
-                    <div class="swiper-slide slide3">slide4</div>
+            </section>
+            <!-- 카드뉴스 시작 -->
+            <section class="design" id="cardnews_design">
+                <h3>CARD-NEWS DESIGN</h3>
+                <div class="swiper-container cardl">
+                    <div class="swiper" id="card_slidel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">slide1</div>
+                            <div class="swiper-slide slide2">slide2</div>
+                            <div class="swiper-slide slide3">slide3</div>
+                            <div class="swiper-slide slide3">slide4</div>
+                        </div>
+                    </div>
+                    <!--슬라이드 버튼-->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <!--필요 시 사용(선택)-->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="swiper-container cardr">
-                <!--필수-->
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">slide1</div>
-                    <div class="swiper-slide slide2">slide2</div>
-                    <div class="swiper-slide slide3">slide3</div>
-                    <div class="swiper-slide slide3">slide4</div>
+                <div class="swiper-container cardr">
+                    <div class="swiper" id="card_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">slide1</div>
+                            <div class="swiper-slide slide2">slide2</div>
+                            <div class="swiper-slide slide3">slide3</div>
+                            <div class="swiper-slide slide3">slide4</div>
+                        </div>
+                    </div>
+                    <!--슬라이드 버튼-->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <!--필요 시 사용(선택)-->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section id="project_web1">
             <h1><img src="./images/gentlemonster_title.png" alt="gentlemonster"></h1>
             <div class="project_bg">
@@ -229,6 +245,6 @@
             </div>  
             </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <script src="./script/index.js"></script>
 </body> 
 </html>

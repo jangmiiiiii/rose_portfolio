@@ -162,7 +162,7 @@ main #profile .container .profile_txt .profile_right .left {
 
 }
 main #profile .container .profile_txt .profile_right .left > li {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 main #profile .container .profile_txt .profile_right .left .aboutme ul > li {
     display: flex;
@@ -193,7 +193,7 @@ main #profile .container .profile_txt .right  {
 main #profile .container .profile_txt .right li {}
 main #profile .container .profile_txt .right li > h3 {}
 main #profile .container .profile_txt .right li > ul {
-    padding-bottom: 50px;
+    padding-bottom: 35px;
 }
 main #profile .container .profile_txt .right li > ul > li {
     padding-bottom: 20px;
@@ -211,6 +211,12 @@ main #profile .container .profile_txt .right .experience > ul > li:last-child {
 }
 /* ----------------------------SKILL------------------------------ */
 main #profile .container .profile_txt .skill {}
+main #profile .container .profile_txt .skill h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 25px;
+    color: #266C9F;
+}
 main #profile .container .profile_txt .skill ul {
     display: flex;
     flex-flow: row nowrap;
@@ -224,30 +230,38 @@ main #profile .container .profile_txt .skill ul li img {}
 /* design */
 
 main .design {
-    width: 100%; height: 960px;
+    width: 1300px; height: 960px;
     margin: 0 auto;
+}
+main .design h2 {
+    font-size: 4.375rem;
+    color: #266C9F;
+    font-family: abril;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
 }
 main .design > div > h3 {
     font-size: 2.5rem;
-    font-family: abril;
-    padding-bottom: 30px;
+    font-family: 나눔스퀘어EXTRABOLD;
     color: #266C9F;
+    letter-spacing: -0.02rem;
+    font-weight: 700;
+    padding-bottom: 30px;
 }
-main .design > div > div { 
-}
+main .design > div > div {}
 /* sns */
-main #sns_design {
-
-}
+main #sns_design {}
 main #sns_design .sns {
     width: 1300px; height: 100%; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
-}
-main .design .sns h3 {
 
+}
+main .design .sns h3 {}
+main #sns_design .sns > .contents:hover {
+    filter: grayscale(0);
+    transition: all 0.5s linear;
 }
 main #sns_design .sns > .contents {
     width: 100%;
@@ -255,6 +269,11 @@ main #sns_design .sns > .contents {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    filter: grayscale(100%);
+}
+main #sns_design .sns > .contents a:hover {
+    filter: grayscale(0);
+    background-size: 105%;
 }
 main #sns_design .sns > .contents a {
     display: block;
@@ -264,6 +283,9 @@ main #sns_design .sns > .contents a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.25);
+    /* filter: grayscale(100%); */
+
 }
 main #sns_design .sns > .contents .sns1 {background-image: url(../images/sns_design/sns1.jpg);}
 main #sns_design .sns > .contents .sns2 {background-image: url(../images/sns_design/sns2.jpg);}
@@ -277,21 +299,27 @@ main #sns_design .sns > .contents .sns8 {background-image: url(../images/sns_des
 main #banner_design {
     width: 100%;
 }
-main #banner_design .banner { background: rgb(223, 162, 50);
-    width:100%; height: 100%; margin: 0 auto;
+main #banner_design .banner { /* background: rgb(223, 162, 50); */
+    width:1300px; height: 100%; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
 }
-main #banner_design .banner h3 {}
+main #banner_design .banner h3 {
+    display: flex;
+    align-self: flex-end;
+}
 main #banner_design .banner > .contents {
     width: 1300px; 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    
+
+}
+main #banner_design .banner > .contents  a:hover {
+    background-size: 110% auto;
 }
 main #banner_design .banner > .contents  a {background-color: darkgrey;
     display: block;
@@ -301,6 +329,9 @@ main #banner_design .banner > .contents  a {background-color: darkgrey;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+    box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.25);
+    
+    
 }
 main #banner_design .banner > .contents .banner1 {background-image: url(../images/banner_design/banner1.jpg);}
 main #banner_design .banner > .contents .banner2 {background-image: url(../images/banner_design/banner2.jpg);}
@@ -308,14 +339,57 @@ main #banner_design .banner > .contents .banner3 {}
 main #banner_design .banner > .contents .banner4 {}
 
 /* detail*/
-main #detail_design {}
-main #detail_design .detail {}
-main #detail_design .detail h3 {}
-main #detail_design .detail > .contents {}
-main #detail_design .detail > .contents .detail1 {}
-main #detail_design .detail > .contents .detail2 {}
-main #detail_design .detail > .contents .detail3 {}
-main #detail_design .detail > .contents .detail4 {}
+main #detail_design {/* background: wheat; */
+    width: 1300px; height: 960px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main #detail_design .detail {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main #detail_design .detail h3 {    
+    align-self: self-start;
+    padding-right: 30px;
+}
+main #detail_design .detail .detail_all {
+    position: relative;
+}
+main #detail_design .detail .detail_all #detail_slide {/* background: lightblue; */
+
+
+}
+main #detail_design .detail .detail_all #detail_slide .detail_contents {
+    width: 950px; height: 550px;
+}
+main #detail_design .detail .detail_all .detail_contents .swiper-slide {
+    width: 450px; height: 600px;
+    background-size: cover;  
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+
+main #detail_design .detail .detail_all .detail_contents .slide1 {background-image: url(../images/detail_design/detail1.jpg);}
+main #detail_design .detail .detail_all .detail_contents .slide2 {background-image: url(../images/detail_design/detail2.jpg)}
+main #detail_design .detail .detail_all .detail_contents .slide3 {background-image: url(../images/detail_design/detail3.jpg)}
+main #detail_design .detail .detail_all .detail_contents .slide4 {}
+
+/* main #detail_design .detail > .detail {
+    display: flex;
+    justify-content: space-between;}
+main #detail_design .detail > .contents a { background: rgb(102, 129, 138);
+    display: block;
+    width: 300px; height: 600px;
+    background-size: cover;
+} */
+
+
 /* cardnews*/
 main #cardnews_design {}
 main #cardnews_design .cardNews {}
