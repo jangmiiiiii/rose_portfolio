@@ -16,17 +16,31 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <style>
-        #popup {
+        /* sns 팝업 시작 */
+        #popup1{
             position:fixed; left:0; top:0;
             width:100%; height:100vh;
             z-index:99999;
             background-color:rgba(0,0,0,0.5);
         }
-        #popup .contents {
-            width:800px; height:850px;
-            background:aqua; margin:100px auto 0;
+        #popup1 .contents {
+            width:900px; height:900px;
+            background:aqua; margin:450px auto ;
         }
-        #popup .contents img {width:100%;}
+        #popup1 .contents img {width:100%;}
+        /* sns 팝업 끝 */
+        /* banner 팝업 시작 */
+        #popup2{
+            position:fixed; left:0; top:0;
+            width:100%; height:100vh;
+            z-index:99999;
+            background-color:rgba(0,0,0,0.5);
+        }
+        #popup2 .contents {
+            width: 1000px; height: 400px;
+        }
+        #popup2 .contents img {width: 100%;}
+        /* banner 팝업 끝 */
     </style>
 </head>
 <body>
@@ -149,62 +163,64 @@
                 </div>
             </div>
         </section>
-        <div id="popup" class="popup_sns">
+
+        <h2>DESIGN</h2>
+
+        <div id="popup1" class="popup_sns">
             <div class="contents">
                 <img src="" alt="">
             </div>
         </div>
-        <div class="design">
-            <h2>DESIGN</h2>
-            <section class="design" id="sns_design">
-                <div class="sns">
-                    <h3>SNS DESIGN</h3>
-                    <div class="contents">
-                        <a href="#" class="sns1"></a>
-                        <a href="#" class="sns2"></a>
-                        <a href="#" class="sns3"></a>
-                        <a href="#" class="sns4"></a>
-                        <a href="#" class="sns5"></a>
-                        <a href="#" class="sns6"></a>
-                        <a href="#" class="sns7"></a>
-                        <a href="#" class="sns8"></a>
-                    </div>
+        <section class="design" id="sns_design">
+            <div class="sns">
+                <h3>SNS DESIGN</h3>
+                <div class="contents">
+                    <a href="#" class="sns1"></a>
+                    <a href="#" class="sns2"></a>
+                    <a href="#" class="sns3"></a>
+                    <a href="#" class="sns4"></a>
+                    <a href="#" class="sns5"></a>
+                    <a href="#" class="sns6"></a>
+                    <a href="#" class="sns7"></a>
+                    <a href="#" class="sns8"></a>
                 </div>
-            </section>
-            <section class="design" id="banner_design">
-                <div class="banner">
-                    <h3>BANNER DESIGN</h3>
-                    <div class="contents">
-                        <a href="#" class="banner1"></a>
-                        <a href="#" class="banner2"></a>
-                        <a href="#" class="banner3"></a>
-                        <a href="#" class="banner4"></a>
-                    </div>
+            </div>
+        </section>
+        <section class="design" id="banner_design">
+            <div class="banner">
+                <h3>BANNER DESIGN</h3>
+                <div class="contents">
+                    <a href="#" class="banner1"></a>
+                    <a href="#" class="banner2"></a>
+                    <a href="#" class="banner3"></a>
+                    <a href="#" class="banner4"></a>
                 </div>
-            </section>
-            <section class="design" id="detail_design">
-                <div class="detail">
-                    <h3>DETAIL DESIGN</h3>
-                    <div class="swiper-container detail_all">
-                        <div class="swiper" id="detail_slide">
-                            <div class="swiper-wrapper detail_contents">
-                                <div class="swiper-slide slide1"></div>
-                                <div class="swiper-slide slide2"></div>
-                                <div class="swiper-slide slide3"></div>
-                                <div class="swiper-slide slide4"></div>
-                            </div>
+            </div>
+        </section>
+
+        <section class="design" id="detail_design">
+            <div class="detail">
+                <h3>DETAIL DESIGN</h3>
+                <div class="swiper-container detail_all">
+                    <div class="swiper" id="detail_slide">
+                        <div class="swiper-wrapper detail_contents">
+                            <div class="swiper-slide slide1"></div>
+                            <div class="swiper-slide slide2"></div>
+                            <div class="swiper-slide slide3"></div>
+                            <div class="swiper-slide slide4"></div>
                         </div>
-                        <!--필요 시 사용(선택)-->
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
-                    </div>
+                    <!--필요 시 사용(선택)-->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-            </section>
+            </div>
+        </section>
             <!-- 카드뉴스 시작 -->
-            <section class="design" id="cardnews_design">
-                <h3>CARD-NEWS DESIGN</h3>
+        <section class="design" id="cardnews_design">
+            <h3>CARD-NEWS DESIGN</h3>
+            <div class="all">
                 <div class="swiper-container cardl">
                     <div class="swiper" id="card_slidel">
                         <div class="swiper-wrapper card_contents" id="conl">
@@ -233,8 +249,8 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section id="project_web1">
             <h1><img src="./images/gentlemonster_title.png" alt="gentlemonster"></h1>
             <div class="project_bg">
@@ -264,26 +280,56 @@
     </main>
     <script src="./script/index.js"></script>
     <script>
+        //sns 팝업 시작 -------------
+        const popup1 = document.querySelector('#popup1')
+        const popup1_img = document.querySelector('#popup1 img')
+        const sns_a = document.querySelectorAll('.sns a')    
+        const banner_a = document.querySelectorAll('.banner a')    
 
-        const popup = document.querySelector('#popup')
-        const popup_img = document.querySelector('#popup img')
-        const sns_a = document.querySelectorAll('.sns a')
-
-        popup.style.display = 'none'
+        popup1.style.display = 'none'
 
         sns_a.forEach(function(t,i,a){
             console.log(t,i,a)
             t.addEventListener('click',function(e){
                 e.preventDefault();
-                popup.style.display = 'block'
-                popup_img.src = `./images/sns_design/sns${i+1}.jpg`
+                popup1.style.display = 'block'
+                popup1_img.src = `./images/sns_design/sns${i+1}.jpg`
+            })
+        })
+        banner_a.forEach(function(t,i,a){
+            console.log(t,i,a)
+            t.addEventListener('click',function(e){
+                e.preventDefault();
+                popup1.style.display = 'block'
+                popup1_img.src = `./images/banner_design/banner${i+1}.jpg`
             })
         })
 
-        popup.addEventListener('click',function(){
-            popup.style.display = 'none'
+        popup1.addEventListener('click',function(){
+            popup1.style.display = 'none'
         })
+        //sns 팝업 끝 -------------
 
+        //banner 팝업 시작 -------------
+        // const popup2 = document.querySelector('#popup2')
+        // const popup2_img = document.querySelector('#popup2 img')
+        // const banner_a = document.querySelectorAll('.banner a')
+
+        // popup2.style.display = 'none'
+
+        // banner_a.forEach(function(target,index,array){
+        //     console.log(t,i,a)
+        //     t.addEventListener('click',function(e){
+        //         e.preventDefault();
+        //         popup2.style.display = 'block'
+        //         popup2_img.src = `./images/banner_design/banner${i+1}.jpg`
+        //     })
+        // })
+
+        popup2.addEventListener('click',function(){
+            popup2.style.display = 'none'
+        })
+        //banner 팝업 끝 -------------
     </script>
 </body> 
 </html>

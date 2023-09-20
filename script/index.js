@@ -9,3 +9,14 @@ var mySwiper = new Swiper('#detail_slide ', {
     },
 })
 // detail design slide 끝
+
+const cardr_swiper = new Swiper('card_slider', {
+    slidesPerView:1,
+    spaceBetween:30,
+    //페이지 이전/다음 버튼
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+})

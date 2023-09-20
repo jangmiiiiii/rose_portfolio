@@ -249,8 +249,8 @@ main .design > div > h3 {
 main .design > div > div {}
 /* sns */
 main #sns_design {}
-main #sns_design .sns {
-    width: 1300px; height: 100%; margin: 0 auto;
+main #sns_design .sns { background: lightblue;
+    width: 1300px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -298,6 +298,7 @@ main #banner_design { background: wheat;
     width:1300px; height: 960px; margin: 0 auto; 
 }
 main #banner_design .banner { /* background: rgb(223, 162, 50); */
+    width: 1300px; height: 960px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -336,22 +337,19 @@ main #banner_design .banner > .contents .banner3 {}
 main #banner_design .banner > .contents .banner4 {}
 
 /* detail*/
-main #detail_design {/* background: wheat; */
+main #detail_design {background: rgb(179, 245, 184);
     width: 1300px; height: 960px; margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
 }
 main #detail_design .detail {
+    width:1300px; height: 960px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+    align-items:center;
 }
 main #detail_design .detail h3 {    
     align-self: self-start;
-    padding-right: 30px;
+    padding-top: 200px;
 }
 main #detail_design .detail .detail_all {
     position: relative;
@@ -364,7 +362,7 @@ main #detail_design .detail .detail_all #detail_slide .detail_contents {
     width: 950px; height: 550px;
 }
 main #detail_design .detail .detail_all .detail_contents .swiper-slide {
-    width: 450px; height: 600px;
+    width: 400px; height: 600px;
     background-size: cover;  
     border-radius: 20px;
     box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.25);
@@ -379,16 +377,56 @@ main #detail_design .detail .detail_all .detail_contents .slide4 {}
 
 /* cardnews*/
 main #cardnews_design {background: lightblue;
-    width: 1300px; height: 960px;
+    width: 1300px; height: 960px; margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
-main #cardnews_design h3 {}
+main #cardnews_design h3 {
+    font-size: 2.5rem;
+    font-family: 나눔스퀘어EXTRABOLD;
+    color: #266C9F;
+    letter-spacing: -0.02rem;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+main #cardnews_design .all {
+    width: 1300px;
+    display: flex;
+    justify-content: space-around;
+}
 main #cardnews_design .cardl {}
-main #cardnews_design .cardl #card_slidel {}
-main #cardnews_design .cardl #card_slidel {}
-main #cardnews_design .cardl #card_slidel .card_contents {}
-main #cardnews_design .cardl #card_slidel .card_contents .swiper-slide {}
+main #cardnews_design .cardl #card_slidel {
+    position: relative;
+}
+main #cardnews_design .cardl #card_slidel .card_contents {
+    background: indianred;
+    width: 500px; height: 500px;
+}
+main #cardnews_design .cardl #card_slidel .card_contents .swiper-slide {
+    width: 100%; height: 100%;
+}
 
 main #sns .contents,main #banner .contents, main #detail .contents , main #cardNews .contents{width:1300px; margin: 0 auto;}
+
+/* cardnews -right  */
+main #cardnews_design .cardr {}
+main #cardnews_design .cardr #card_slider {
+    position: relative;
+}
+main #cardnews_design .cardr #card_slider .card_contents {
+    background: rgb(121, 75, 75);
+    width: 500px; height: 500px;
+}
+main #cardnews_design .cardr #card_slider .card_contents .swiper-slide {
+    width: 100%;
+}
+main #cardnews_design .cardr #card_slider .card_contents > .slide1 {background-image: url(../images/sns_design/sns1.jpg);}
+main #cardnews_design .cardr #card_slider .card_contents > .slide2 {background-image: url(../images/sns_design/sns2.jpg);}
+main #cardnews_design .cardr #card_slider .card_contents > .slide3 {background-image: url(../images/sns_design/sns3.jpg);}
+main #cardnews_design .cardr #card_slider .card_contents > .slide4 {background-image: url(../images/sns_design/sns4.jpg);}
+
+/* main #sns .contents,main #banner .contents, main #detail .contents , main #cardNews .contents{width:1300px; margin: 0 auto;} */
 /* main section .contents img {
     background: rgb(165, 103, 21);
     width: 3000px; height: 300px;
