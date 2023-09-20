@@ -28,7 +28,10 @@ header nav .gnb a {
 /* #home */
 main {}
 /* main > * {padding: 0 300px;} main의 모든 자식요소들  */
-main #home { width:1920px; height: 960px; overflow: hidden;}
+main #home { 
+    width:1920px; height: 960px; margin: 0 auto;
+    overflow: hidden;
+}
 main #home .homebg{    
     background:url(../images/sky_blue.jpg);
 text-align: center;  margin: 0 auto;}
@@ -216,14 +219,108 @@ main #profile .container .profile_txt .skill ul {
 main #profile .container .profile_txt .skill ul li {}
 main #profile .container .profile_txt .skill ul li img {}
 
-/* sns */
-main section {background: lightblue;
+
+
+/* design */
+
+main .design {
     width: 100%; height: 960px;
     margin: 0 auto;
 }
-main #sns .popup {}
-main #sns .popup img {}
-main #sns p {}
+main .design > div > h3 {
+    font-size: 2.5rem;
+    font-family: abril;
+    padding-bottom: 30px;
+    color: #266C9F;
+}
+main .design > div > div { 
+}
+/* sns */
+main #sns_design {
+
+}
+main #sns_design .sns {
+    width: 1300px; height: 100%; margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .design .sns h3 {
+
+}
+main #sns_design .sns > .contents {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main #sns_design .sns > .contents a {
+    display: block;
+    width: 300px; height: 300px; background-color: rgb(179, 172, 172);
+    margin-bottom: 30px;
+    border-radius:20px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main #sns_design .sns > .contents .sns1 {background-image: url(../images/sns_design/sns1.jpg);}
+main #sns_design .sns > .contents .sns2 {background-image: url(../images/sns_design/sns2.jpg);}
+main #sns_design .sns > .contents .sns3 {background-image: url(../images/sns_design/sns3.jpg);}
+main #sns_design .sns > .contents .sns4 {background-image: url(../images/sns_design/sns4.jpg);}
+main #sns_design .sns > .contents .sns5 {background-image: url(../images/sns_design/sns5.jpg);}
+main #sns_design .sns > .contents .sns6 {background-image: url(../images/sns_design/sns6.jpg);}
+main #sns_design .sns > .contents .sns7 {background-image: url(../images/sns_design/sns7.jpg);}
+main #sns_design .sns > .contents .sns8 {background-image: url(../images/sns_design/sns8.jpg);}
+/* banner*/
+main #banner_design {
+    width: 100%;
+}
+main #banner_design .banner { background: rgb(223, 162, 50);
+    width:100%; height: 100%; margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+main #banner_design .banner h3 {}
+main #banner_design .banner > .contents {
+    width: 1300px; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+main #banner_design .banner > .contents  a {background-color: darkgrey;
+    display: block;
+    width: 635px; height: 245px;    
+    border-radius:20px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+main #banner_design .banner > .contents .banner1 {background-image: url(../images/banner_design/banner1.jpg);}
+main #banner_design .banner > .contents .banner2 {background-image: url(../images/banner_design/banner2.jpg);}
+main #banner_design .banner > .contents .banner3 {}
+main #banner_design .banner > .contents .banner4 {}
+
+/* detail*/
+main #detail_design {}
+main #detail_design .detail {}
+main #detail_design .detail h3 {}
+main #detail_design .detail > .contents {}
+main #detail_design .detail > .contents .detail1 {}
+main #detail_design .detail > .contents .detail2 {}
+main #detail_design .detail > .contents .detail3 {}
+main #detail_design .detail > .contents .detail4 {}
+/* cardnews*/
+main #cardnews_design {}
+main #cardnews_design .cardNews {}
+main #sns_desigcardnews_design .cardNews h3 {}
+
 main #sns .contents,main #banner .contents, main #detail .contents , main #cardNews .contents{width:1300px; margin: 0 auto;}
 main section .contents img {
     background: antiquewhite;
