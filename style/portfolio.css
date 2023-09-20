@@ -230,8 +230,6 @@ main #profile .container .profile_txt .skill ul li img {}
 /* design */
 
 main .design {
-    width: 1300px; height: 960px;
-    margin: 0 auto;
 }
 main .design h2 {
     font-size: 4.375rem;
@@ -296,11 +294,10 @@ main #sns_design .sns > .contents .sns6 {background-image: url(../images/sns_des
 main #sns_design .sns > .contents .sns7 {background-image: url(../images/sns_design/sns7.jpg);}
 main #sns_design .sns > .contents .sns8 {background-image: url(../images/sns_design/sns8.jpg);}
 /* banner*/
-main #banner_design {
-    width: 100%;
+main #banner_design { background: wheat;
+    width:1300px; height: 960px; margin: 0 auto; 
 }
 main #banner_design .banner { /* background: rgb(223, 162, 50); */
-    width:1300px; height: 100%; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -380,26 +377,22 @@ main #detail_design .detail .detail_all .detail_contents .slide2 {background-ima
 main #detail_design .detail .detail_all .detail_contents .slide3 {background-image: url(../images/detail_design/detail3.jpg)}
 main #detail_design .detail .detail_all .detail_contents .slide4 {}
 
-/* main #detail_design .detail > .detail {
-    display: flex;
-    justify-content: space-between;}
-main #detail_design .detail > .contents a { background: rgb(102, 129, 138);
-    display: block;
-    width: 300px; height: 600px;
-    background-size: cover;
-} */
-
-
 /* cardnews*/
-main #cardnews_design {}
-main #cardnews_design .cardNews {}
-main #sns_desigcardnews_design .cardNews h3 {}
+main #cardnews_design {background: lightblue;
+    width: 1300px; height: 960px;
+}
+main #cardnews_design h3 {}
+main #cardnews_design .cardl {}
+main #cardnews_design .cardl #card_slidel {}
+main #cardnews_design .cardl #card_slidel {}
+main #cardnews_design .cardl #card_slidel .card_contents {}
+main #cardnews_design .cardl #card_slidel .card_contents .swiper-slide {}
 
 main #sns .contents,main #banner .contents, main #detail .contents , main #cardNews .contents{width:1300px; margin: 0 auto;}
-main section .contents img {
-    background: antiquewhite;
-    width: 300px; height: 300px;
+/* main section .contents img {
+    background: rgb(165, 103, 21);
+    width: 3000px; height: 300px;
     border-radius: 20px;
-}
+} */
 
 /* #project_web1 */

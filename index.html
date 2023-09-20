@@ -15,7 +15,19 @@
     <!-- swiper -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    
+    <style>
+        #popup {
+            position:fixed; left:0; top:0;
+            width:100%; height:100vh;
+            z-index:99999;
+            background-color:rgba(0,0,0,0.5);
+        }
+        #popup .contents {
+            width:800px; height:850px;
+            background:aqua; margin:100px auto 0;
+        }
+        #popup .contents img {width:100%;}
+    </style>
 </head>
 <body>
     <header>
@@ -137,6 +149,11 @@
                 </div>
             </div>
         </section>
+        <div id="popup" class="popup_sns">
+            <div class="contents">
+                <img src="" alt="">
+            </div>
+        </div>
         <div class="design">
             <h2>DESIGN</h2>
             <section class="design" id="sns_design">
@@ -190,7 +207,7 @@
                 <h3>CARD-NEWS DESIGN</h3>
                 <div class="swiper-container cardl">
                     <div class="swiper" id="card_slidel">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper card_contents" id="conl">
                             <div class="swiper-slide slide1">slide1</div>
                             <div class="swiper-slide slide2">slide2</div>
                             <div class="swiper-slide slide3">slide3</div>
@@ -204,7 +221,7 @@
                 </div>
                 <div class="swiper-container cardr">
                     <div class="swiper" id="card_slider">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper card_contents" id="conr">
                             <div class="swiper-slide slide1">slide1</div>
                             <div class="swiper-slide slide2">slide2</div>
                             <div class="swiper-slide slide3">slide3</div>
@@ -246,5 +263,27 @@
             </section>
     </main>
     <script src="./script/index.js"></script>
+    <script>
+
+        const popup = document.querySelector('#popup')
+        const popup_img = document.querySelector('#popup img')
+        const sns_a = document.querySelectorAll('.sns a')
+
+        popup.style.display = 'none'
+
+        sns_a.forEach(function(t,i,a){
+            console.log(t,i,a)
+            t.addEventListener('click',function(e){
+                e.preventDefault();
+                popup.style.display = 'block'
+                popup_img.src = `./images/sns_design/sns${i+1}.jpg`
+            })
+        })
+
+        popup.addEventListener('click',function(){
+            popup.style.display = 'none'
+        })
+
+    </script>
 </body> 
 </html>
