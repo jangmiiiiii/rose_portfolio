@@ -244,13 +244,13 @@ main .design > div > h3 {
     color: #266C9F;
     letter-spacing: -0.02rem;
     font-weight: 700;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 main .design > div > div {}
 /* sns */
 main #sns_design {}
 main #sns_design .sns { background: lightblue;
-    width: 1300px; height: 960px; margin: 0 auto;
+    width: 1200px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -275,7 +275,7 @@ main #sns_design .sns > .contents a:hover {
 }
 main #sns_design .sns > .contents a {
     display: block;
-    width: 300px; height: 300px; background-color: rgb(179, 172, 172);
+    width: 280px; height: 280px; background-color: rgb(179, 172, 172);
     margin-bottom: 30px;
     border-radius:20px ;
     background-size: cover;
@@ -295,10 +295,10 @@ main #sns_design .sns > .contents .sns7 {background-image: url(../images/sns_des
 main #sns_design .sns > .contents .sns8 {background-image: url(../images/sns_design/sns8.jpg);}
 /* banner*/
 main #banner_design { background: wheat;
-    width:1300px; height: 960px; margin: 0 auto; 
+    width:100%; height: 960px; margin: 0 auto; 
 }
-main #banner_design .banner { /* background: rgb(223, 162, 50); */
-    width: 1300px; height: 960px;
+main #banner_design .banner { background: rgb(223, 162, 50);
+    width: 1200px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -310,7 +310,7 @@ main #banner_design .banner h3 {
     align-self: flex-end;
 }
 main #banner_design .banner > .contents {
-    width: 1300px; 
+    width: 1200px; 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -321,7 +321,7 @@ main #banner_design .banner > .contents  a:hover {
 }
 main #banner_design .banner > .contents  a {background-color: darkgrey;
     display: block;
-    width: 635px; height: 245px;    
+    width: 590px; height: 225px;    
     border-radius:20px ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -338,10 +338,10 @@ main #banner_design .banner > .contents .banner4 {}
 
 /* detail*/
 main #detail_design {background: rgb(179, 245, 184);
-    width: 1300px; height: 960px; margin: 0 auto;
+    width: 100%; height: 960px; margin: 0 auto;
 }
-main #detail_design .detail {
-    width:1300px; height: 960px;
+main #detail_design .detail { background: fuchsia;
+    width:1200px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content:space-between;
@@ -349,7 +349,7 @@ main #detail_design .detail {
 }
 main #detail_design .detail h3 {    
     align-self: self-start;
-    padding-top: 200px;
+    padding-top: 140px;
 }
 main #detail_design .detail .detail_all {
     position: relative;
@@ -359,10 +359,10 @@ main #detail_design .detail .detail_all #detail_slide {/* background: lightblue;
 
 }
 main #detail_design .detail .detail_all #detail_slide .detail_contents {
-    width: 950px; height: 550px;
+    width: 850px; height: 670px;
 }
 main #detail_design .detail .detail_all .detail_contents .swiper-slide {
-    width: 400px; height: 600px;
+    width: 350px; height: 650px;
     background-size: cover;  
     border-radius: 20px;
     box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.25);
@@ -377,46 +377,60 @@ main #detail_design .detail .detail_all .detail_contents .slide4 {}
 
 /* cardnews*/
 main #cardnews_design {background: lightblue;
-    width: 1300px; height: 960px; margin: 0 auto;
+    width: 100%; height: 960px; margin: 0 auto;
+
+}
+main #cardnews_design .cardnews { background: lightpink;
+    width:1200px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    justify-content:center;
+    
 }
-main #cardnews_design h3 {
+main #cardnews_design h3 { 
     font-size: 2.5rem;
     font-family: 나눔스퀘어EXTRABOLD;
     color: #266C9F;
     letter-spacing: -0.02rem;
     font-weight: 700;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 main #cardnews_design .all {
-    width: 1300px;
+    width: 100%;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-around;
+    align-items: center;
 }
-main #cardnews_design .cardl {}
-main #cardnews_design .cardl #card_slidel {
+main #cardnews_design .cardl {
     position: relative;
+}
+main #cardnews_design .cardl #card_slidel {
+    border-radius: 20px;
 }
 main #cardnews_design .cardl #card_slidel .card_contents {
     background: indianred;
-    width: 500px; height: 500px;
+    width: 500px; height: 500px;   
+
 }
 main #cardnews_design .cardl #card_slidel .card_contents .swiper-slide {
     width: 100%; height: 100%;
+
 }
 
 main #sns .contents,main #banner .contents, main #detail .contents , main #cardNews .contents{width:1300px; margin: 0 auto;}
 
 /* cardnews -right  */
-main #cardnews_design .cardr {}
-main #cardnews_design .cardr #card_slider {
+main #cardnews_design .cardr {
     position: relative;
+}
+main #cardnews_design .cardr #card_slider {    border-radius: 20px;
+
 }
 main #cardnews_design .cardr #card_slider .card_contents {
     background: rgb(121, 75, 75);
     width: 500px; height: 500px;
+
 }
 main #cardnews_design .cardr #card_slider .card_contents .swiper-slide {
     width: 100%;
@@ -426,11 +440,31 @@ main #cardnews_design .cardr #card_slider .card_contents > .slide2 {background-i
 main #cardnews_design .cardr #card_slider .card_contents > .slide3 {background-image: url(../images/sns_design/sns3.jpg);}
 main #cardnews_design .cardr #card_slider .card_contents > .slide4 {background-image: url(../images/sns_design/sns4.jpg);}
 
-/* main #sns .contents,main #banner .contents, main #detail .contents , main #cardNews .contents{width:1300px; margin: 0 auto;} */
-/* main section .contents img {
-    background: rgb(165, 103, 21);
-    width: 3000px; height: 300px;
-    border-radius: 20px;
-} */
-
 /* #project_web1 */
+main .project {background: wheat;
+    width: 1300px; height: 960px;
+}
+main .project .web { background: lightcoral;
+    width: 1300px; height: 960px;
+}
+main .project .web h3 {}
+main .project .web .web_all {background: lightblue;}
+main .project .web .swiper-container {background: lightgreen;}
+main .project .web .swiper-container .swiper {}
+main .project .web .swiper-container .swiper .swiper-wrapper {}
+
+/* apc */
+main .project .web .swiper-container .swiper #apc {}
+main .project .web .swiper-container .swiper #apc #project_web1 {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .preview {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_info {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_contents {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_contents dl {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_contents dl dt {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_contents dl dd {}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .link {
+    
+}
+main .project .web .swiper-container .swiper #apc #project_web1 h1 .link a {}

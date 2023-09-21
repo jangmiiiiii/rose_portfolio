@@ -13,44 +13,22 @@
     <link rel="stylesheet" href="./style/portfolio.css">
     <link rel="stylesheet" href="./style/portfolio_ani.css">
     <!-- swiper -->
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <style>
-<<<<<<< HEAD
         /* sns 팝업시작 */
         #popup {
-=======
-        /* sns 팝업 시작 */
-        #popup1{
->>>>>>> 85cc4609c02914b0196702fa125b55dfee01961d
             position:fixed; left:0; top:0;
             width:100%; height:100vh;
             z-index:99999;
             background-color:rgba(0,0,0,0.5);
         }
-        #popup1 .contents {
+        #popup .contents {
             width:900px; height:900px;
             background:aqua; margin:450px auto ;
         }
-<<<<<<< HEAD
         #popup .contents img {width:100%;}
         /* sns 팝업 끝 */
-=======
-        #popup1 .contents img {width:100%;}
-        /* sns 팝업 끝 */
-        /* banner 팝업 시작 */
-        #popup2{
-            position:fixed; left:0; top:0;
-            width:100%; height:100vh;
-            z-index:99999;
-            background-color:rgba(0,0,0,0.5);
-        }
-        #popup2 .contents {
-            width: 1000px; height: 400px;
-        }
-        #popup2 .contents img {width: 100%;}
-        /* banner 팝업 끝 */
->>>>>>> 85cc4609c02914b0196702fa125b55dfee01961d
     </style>
 </head>
 <body>
@@ -60,7 +38,7 @@
                 <a href="#home">HOME</a>
                 <a href="#profile">PROFILE</a>
                 <a href="#project_web1">DESIGN</a>
-                <a href="#">PROJECT-Design</a>
+                <a href="#">PROJECT-DESIGN</a>
                 <a href="#">CONTECT</a>
             </div>
         </nav>
@@ -173,37 +151,14 @@
                 </div>
             </div>
         </section>
-<<<<<<< HEAD
         <!-- 팝업 sns -->
         <div id="popup" class="popup_sns">
-=======
-
-        <h2>DESIGN</h2>
-
-        <div id="popup1" class="popup_sns">
->>>>>>> 85cc4609c02914b0196702fa125b55dfee01961d
             <div class="contents">
                 <img src="" alt="">
             </div>
         </div>
-<<<<<<< HEAD
         <!-- 팝업 sns 끝 -->
-        <div class="design">
-            <h2>DESIGN</h2>
-            <section class="design" id="sns_design">
-                <div class="sns">
-                    <h3>SNS DESIGN</h3>
-                    <div class="contents">
-                        <a href="#" class="sns1"></a>
-                        <a href="#" class="sns2"></a>
-                        <a href="#" class="sns3"></a>
-                        <a href="#" class="sns4"></a>
-                        <a href="#" class="sns5"></a>
-                        <a href="#" class="sns6"></a>
-                        <a href="#" class="sns7"></a>
-                        <a href="#" class="sns8"></a>
-                    </div>
-=======
+        <h2>DESIGN</h2>
         <section class="design" id="sns_design">
             <div class="sns">
                 <h3>SNS DESIGN</h3>
@@ -216,7 +171,6 @@
                     <a href="#" class="sns6"></a>
                     <a href="#" class="sns7"></a>
                     <a href="#" class="sns8"></a>
->>>>>>> 85cc4609c02914b0196702fa125b55dfee01961d
                 </div>
             </div>
         </section>
@@ -245,91 +199,132 @@
                         </div>
                     </div>
                     <!--필요 시 사용(선택)-->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev" id="detail_btn1"></div>
+                    <div class="swiper-button-next" id="detail_btn2"></div>
                 </div>
             </div>
         </section>
             <!-- 카드뉴스 시작 -->
         <section class="design" id="cardnews_design">
-            <h3>CARD-NEWS DESIGN</h3>
-            <div class="all">
-                <div class="swiper-container cardl">
-                    <div class="swiper" id="card_slidel">
-                        <div class="swiper-wrapper card_contents" id="conl">
-                            <div class="swiper-slide slide1">slide1</div>
-                            <div class="swiper-slide slide2">slide2</div>
-                            <div class="swiper-slide slide3">slide3</div>
-                            <div class="swiper-slide slide3">slide4</div>
+            <div class="cardnews">
+                <h3>CARD-NEWS DESIGN</h3>
+                <div class="all">
+                    <div class="swiper-container cardl">
+                        <div class="swiper" id="card_slidel">
+                            <div class="swiper-wrapper card_contents" id="conl">
+                                <div class="swiper-slide slide1"></div>
+                                <div class="swiper-slide slide2"></div>
+                                <div class="swiper-slide slide3"></div>
+                                <div class="swiper-slide slide3"></div>
+                            </div>
                         </div>
+                        <!--슬라이드 버튼-->
+                        <div class="swiper-button-prev" id="cardl_btn_left"></div>
+                        <div class="swiper-button-next" id="cardl_btn_right"></div>
                     </div>
-                    <!--슬라이드 버튼-->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-                <div class="swiper-container cardr">
-                    <div class="swiper" id="card_slider">
-                        <div class="swiper-wrapper card_contents" id="conr">
-                            <div class="swiper-slide slide1">slide1</div>
-                            <div class="swiper-slide slide2">slide2</div>
-                            <div class="swiper-slide slide3">slide3</div>
-                            <div class="swiper-slide slide3">slide4</div>
+                    <div class="swiper-container cardr">
+                        <div class="swiper" id="card_slider">
+                            <div class="swiper-wrapper card_contents" id="conr">
+                                <div class="swiper-slide slide1"></div>
+                                <div class="swiper-slide slide2"></div>
+                                <div class="swiper-slide slide3"></div>
+                                <div class="swiper-slide slide3"></div>
+                            </div>
                         </div>
+                        <!--슬라이드 버튼-->
+                        <div class="swiper-button-prev" id="cardr_btn_left"></div>
+                        <div class="swiper-button-next" id="cardr_btn_right"></div>
                     </div>
-                    <!--슬라이드 버튼-->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
-        <section id="project_web1">
-            <h1><img src="./images/gentlemonster_title.png" alt="gentlemonster"></h1>
-            <div class="project_bg">
-                <div class="preveiw"><img src="./images/gentlemonster_mockup.png" alt=""></div>
-                <div class="project_info">
-                    <div class="project_contents">
-                        <dl>
-                            <dt>TYPE</dt>
-                            <dd>Desktop 1920  |  Tablet 1024  | Mobile 480 구성</dd>
-                            <dt>PAGE</dt>
-                            <dd>index/login/board/product/map 총 5페이지</dd>
-                            <dt>TOOL</dt>
-                            <dd>photoshop | illustrator | HTML5 | CSS3 |
-                                Javascript | php | gnuboard |git</dd>
-                            <dt>제작기간</dt>
-                            <dd> 40시간 , 개인 100% 작업</dd>
-                        </dl>
+
+        <!-- web project 시작 -->
+        <section class="project">
+            <div class="web">
+                <h3>WEB</h3>
+                <div class="swiper-container web_all">
+                    <div class="swiper" id="web_slide">
+                        <div class="swiper-wrapper web_contents">
+                            <!-- apc 시작 -->
+                            <div class="swiper-slide slide1" id="apc">
+                                <section id="project_web1">
+                                    <h1>아페세</h1>
+                                    <div class="project_bg">
+                                        <div class="preview"><img src="" alt=""></div>
+                                        <div class="project_info">
+                                            <div class="project_contents">
+                                                <dl>
+                                                    <dt>TYPE</dt>
+                                                    <dd>Desktop 1920  |  Tablet 1024  | Mobile 480 구성</dd>
+                                                    <dt>PAGE</dt>
+                                                    <dd>index/login/board/product/map 총 5페이지</dd>
+                                                    <dt>TOOL</dt>
+                                                    <dd>photoshop | illustrator | HTML5 | CSS3 |
+                                                        Javascript | php | gnuboard |git</dd>
+                                                    <dt>제작기간</dt>
+                                                    <dd> 40시간 , 개인 100% 작업</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link">
+                                        <a href="젠틀몬스터pe.kr-projectpage" target="_blank">최종프로젝트 결과보기</a>
+                                        <a href="https://www.figma.com/proto/EevzpvcfptzQgmwK2Sb9Wi/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023-%EA%B2%B0%EA%B3%BC%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=0-1&viewport=693%2C-143%2C0.13&t=3qb9GSQVGw8VG4Rz-1&scaling=scale-down-width&mode=design" target="_blank">젠틀몬스터 기획서 보기</a>
+                                        <a href="https://www.figma.com/file/K4S9RUB5EMOi4F1qIHmhK7/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023?type=design&node-id=0%3A1&mode=design&t=KcM9Nlq4l9VWdlkB-1" target="_blank">와이어프레임/프로토타입 보기</a>
+                                    </div>  
+                                </section>
+                            </div>
+                            <!-- apc 끝 -->
+                            <!-- hanwha 시작 -->
+                            <div class="swiper-slide slide2" id="hanwha">
+                                <section id="project_web2">
+                                    <h1>한화</h1>
+                                    <div class="project_bg">
+                                        <div class="preview"><img src="" alt=""></div>
+                                        <div class="project_info">
+                                            <div class="project_contents">
+                                                <dl>
+                                                    <dt>TYPE</dt>
+                                                    <dd>Desktop 1920  |  Tablet 1024  | Mobile 480 구성</dd>
+                                                    <dt>PAGE</dt>
+                                                    <dd>index/login/board/product/map 총 5페이지</dd>
+                                                    <dt>TOOL</dt>
+                                                    <dd>photoshop | illustrator | HTML5 | CSS3 |
+                                                        Javascript | php | gnuboard |git</dd>
+                                                    <dt>제작기간</dt>
+                                                    <dd> 40시간 , 개인 100% 작업</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link">
+                                        <a href="젠틀몬스터pe.kr-projectpage" target="_blank">최종프로젝트 결과보기</a>
+                                        <a href="https://www.figma.com/proto/EevzpvcfptzQgmwK2Sb9Wi/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023-%EA%B2%B0%EA%B3%BC%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=0-1&viewport=693%2C-143%2C0.13&t=3qb9GSQVGw8VG4Rz-1&scaling=scale-down-width&mode=design" target="_blank">젠틀몬스터 기획서 보기</a>
+                                        <a href="https://www.figma.com/file/K4S9RUB5EMOi4F1qIHmhK7/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023?type=design&node-id=0%3A1&mode=design&t=KcM9Nlq4l9VWdlkB-1" target="_blank">와이어프레임/프로토타입 보기</a>
+                                    </div>  
+                                </section>
+                            </div>
+                            <!-- hanwha 끝 -->
+                        </div>
                     </div>
+                    <!--슬라이드 버튼-->
+                    <div class="swiper-button-prev" id="web_btn1"></div>
+                    <div class="swiper-button-next" id="web_btn2"></div>
                 </div>
             </div>
-            <div class="link">
-                <a href="젠틀몬스터pe.kr-projectpage" target="_blank">최종프로젝트 결과보기</a>
-                <a href="https://www.figma.com/proto/EevzpvcfptzQgmwK2Sb9Wi/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023-%EA%B2%B0%EA%B3%BC%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=0-1&viewport=693%2C-143%2C0.13&t=3qb9GSQVGw8VG4Rz-1&scaling=scale-down-width&mode=design" target="_blank">젠틀몬스터 기획서 보기</a>
-                <a href="https://www.figma.com/file/K4S9RUB5EMOi4F1qIHmhK7/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023?type=design&node-id=0%3A1&mode=design&t=KcM9Nlq4l9VWdlkB-1" target="_blank">와이어프레임/프로토타입 보기</a>
-            </div>  
-            </section>
+        </section>
+
+
     </main>
     <script src="./script/index.js"></script>
     <script>
-<<<<<<< HEAD
         // sns 팝업 시작
         const popup = document.querySelector('#popup')
         const popup_img = document.querySelector('#popup img')
         const sns_a = document.querySelectorAll('.sns a')
 
         popup.style.display = 'none'
-=======
-        //sns 팝업 시작 -------------
-        const popup1 = document.querySelector('#popup1')
-        const popup1_img = document.querySelector('#popup1 img')
-        const sns_a = document.querySelectorAll('.sns a')    
-        const banner_a = document.querySelectorAll('.banner a')    
-
-        popup1.style.display = 'none'
->>>>>>> 85cc4609c02914b0196702fa125b55dfee01961d
 
         sns_a.forEach(function(t,i,a){
             console.log(t,i,a)
@@ -348,35 +343,10 @@
             })
         })
 
-        popup1.addEventListener('click',function(){
-            popup1.style.display = 'none'
+        popup.addEventListener('click',function(){
+            popup.style.display = 'none'
         })
-<<<<<<< HEAD
         //sns 팝업 끝
-=======
-        //sns 팝업 끝 -------------
-
-        //banner 팝업 시작 -------------
-        // const popup2 = document.querySelector('#popup2')
-        // const popup2_img = document.querySelector('#popup2 img')
-        // const banner_a = document.querySelectorAll('.banner a')
-
-        // popup2.style.display = 'none'
-
-        // banner_a.forEach(function(target,index,array){
-        //     console.log(t,i,a)
-        //     t.addEventListener('click',function(e){
-        //         e.preventDefault();
-        //         popup2.style.display = 'block'
-        //         popup2_img.src = `./images/banner_design/banner${i+1}.jpg`
-        //     })
-        // })
-
-        popup2.addEventListener('click',function(){
-            popup2.style.display = 'none'
-        })
-        //banner 팝업 끝 -------------
->>>>>>> 85cc4609c02914b0196702fa125b55dfee01961d
     </script>
 </body> 
 </html>

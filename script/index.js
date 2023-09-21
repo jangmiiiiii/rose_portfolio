@@ -4,19 +4,30 @@ var mySwiper = new Swiper('#detail_slide ', {
     spaceBetween:30,
     //페이지 이전/다음 버튼
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#detail_btn2',
+        prevEl: '#detail_btn1',
     },
 })
 // detail design slide 끝
 
-const cardr_swiper = new Swiper('card_slider', {
+//카드뉴스 slide 시작
+const cardr_swiper = new Swiper('#card_slider', {
     slidesPerView:1,
     spaceBetween:30,
     //페이지 이전/다음 버튼
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#cardr_btn_left',
+        prevEl: '#cardr_btn_right',
+    },
+})
+const cardl_swiper = new Swiper('#card_slidel', {
+    slidesPerView:1,
+    spaceBetween:30,
+    //페이지 이전/다음 버튼
+    navigation: {
+        prevEl: '#cardl_btn_left',
+        nextEl: '#cardl_btn_right',
     },
 
 })
+//카드뉴스 slide 끝
