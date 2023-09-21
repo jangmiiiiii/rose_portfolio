@@ -37,3 +37,17 @@ const web_swiper = new Swiper('#web_slide', {
 })
 
 //web project slide 끝
+
+    // apc  스와이프 슬라이드
+    var swiper = new Swiper(".project_slide1", {
+        direction: "vertical",
+        loop:true,
+        loopAdditionalSlides: 1,
+        spaceBetween:-1,
+        speed : 1400,
+        autoplay: {
+            delay: 800,
+            disableOnInteraction: false,
+        },
+        
+    });

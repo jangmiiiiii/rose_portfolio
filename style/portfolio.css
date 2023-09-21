@@ -446,7 +446,7 @@ main .project .web {width: 1200px; height: 960px; margin: 0 auto;
 }
 main .project .web h3 {}
 main .project .web .web_all {}
-main .project .web .swiper-container {background: lightgreen;
+main .project .web .swiper-container {
 position: relative;
 
 }
@@ -457,14 +457,46 @@ main .project .web .swiper-container .swiper .swiper-wrapper {}
 main .project .web .swiper-container .swiper #apc {}
 main .project .web .swiper-container .swiper #apc #project_web1 {}
 main .project .web .swiper-container .swiper #apc #project_web1 h1 {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .preview {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_info {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_contents {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_contents dl {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_contents dl dt {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .project_bg .project_contents dl dd {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .link {
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide {position: relative;} /* 컴퓨터 미리보기 시작 */
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide img { background: aqua;
+    width: 450px; height: 387px;
+}
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide > .project_slide1 {    
+    width:428px; height:241px; 
+    position:absolute; top:10px; left:11px; 
+    border-radius:3px; border:2px solid #d4d4d4; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc { 
+    position: relative;
+    width: 428px; height: 241px;
+    z-index: 1;
+    display: flex;
+    
+    
+    transition-duration: 1300ms;
+    transform: translate3d(0px, -1185px, 0px);
+
+
+}
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .apc_img {    
+    width: 428px; height: 241px;
+    background-size: cover; 
+    display: block;
+}
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img1 {background-image: url(../images/web_project/hanwha1.jpg);}
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img2 {background-image: url(../images/web_project/hanwha2.jpg);}
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img3 {background-image: url(../images/web_project/hanwha3.jpg);}
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img4 {background-image: url(../images/web_project/hanwha4.jpg);}
+main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img5 {background-image: url(../images/web_project/hanwha5.jpg);}
+
+main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info {}
+main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info .project_contents {}
+main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info .project_contents dl {}
+main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info .project_contents dl dt {}
+main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info .project_contents dl dd {}
+main .project .web .swiper-container .swiper #apc #project_web1 .link {
     
 }
 main .project .web .swiper-container .swiper #apc #project_web1 h1 .link a {}
