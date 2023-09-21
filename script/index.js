@@ -28,6 +28,12 @@ const cardl_swiper = new Swiper('#card_slidel', {
         prevEl: '#cardl_btn_left',
         nextEl: '#cardl_btn_right',
     },
-
 })
 //카드뉴스 slide 끝
+//web project slide 시작
+const web_swiper = new Swiper('#web_slide', {
+    slidesPerView:1,
+    spaceBetween:30,
+})
+
+//web project slide 끝

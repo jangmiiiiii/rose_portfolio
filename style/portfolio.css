@@ -249,7 +249,7 @@ main .design > div > h3 {
 main .design > div > div {}
 /* sns */
 main #sns_design {}
-main #sns_design .sns { background: lightblue;
+main #sns_design .sns { /* background: lightblue; */
     width: 1200px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -294,10 +294,10 @@ main #sns_design .sns > .contents .sns6 {background-image: url(../images/sns_des
 main #sns_design .sns > .contents .sns7 {background-image: url(../images/sns_design/sns7.jpg);}
 main #sns_design .sns > .contents .sns8 {background-image: url(../images/sns_design/sns8.jpg);}
 /* banner*/
-main #banner_design { background: wheat;
+main #banner_design { /* background: wheat; */
     width:100%; height: 960px; margin: 0 auto; 
 }
-main #banner_design .banner { background: rgb(223, 162, 50);
+main #banner_design .banner { /* background: rgb(223, 162, 50); */
     width: 1200px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -337,10 +337,10 @@ main #banner_design .banner > .contents .banner3 {}
 main #banner_design .banner > .contents .banner4 {}
 
 /* detail*/
-main #detail_design {background: rgb(179, 245, 184);
+main #detail_design {/* background: rgb(179, 245, 184); */
     width: 100%; height: 960px; margin: 0 auto;
 }
-main #detail_design .detail { background: fuchsia;
+main #detail_design .detail { /* background: fuchsia; */
     width:1200px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
@@ -376,11 +376,11 @@ main #detail_design .detail .detail_all .detail_contents .slide3 {background-ima
 main #detail_design .detail .detail_all .detail_contents .slide4 {}
 
 /* cardnews*/
-main #cardnews_design {background: lightblue;
+main #cardnews_design {/* background: lightblue; */
     width: 100%; height: 960px; margin: 0 auto;
 
 }
-main #cardnews_design .cardnews { background: lightpink;
+main #cardnews_design .cardnews { /* background: lightpink; */
     width:1200px; height: 960px; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -408,8 +408,7 @@ main #cardnews_design .cardl {
 main #cardnews_design .cardl #card_slidel {
     border-radius: 20px;
 }
-main #cardnews_design .cardl #card_slidel .card_contents {
-    background: indianred;
+main #cardnews_design .cardl #card_slidel .card_contents {/*  background: indianred; */
     width: 500px; height: 500px;   
 
 }
@@ -427,8 +426,7 @@ main #cardnews_design .cardr {
 main #cardnews_design .cardr #card_slider {    border-radius: 20px;
 
 }
-main #cardnews_design .cardr #card_slider .card_contents {
-    background: rgb(121, 75, 75);
+main #cardnews_design .cardr #card_slider .card_contents { /* background: rgb(121, 75, 75); */
     width: 500px; height: 500px;
 
 }
@@ -442,14 +440,16 @@ main #cardnews_design .cardr #card_slider .card_contents > .slide4 {background-i
 
 /* #project_web1 */
 main .project {background: wheat;
-    width: 1300px; height: 960px;
+    width:100%; height: 960px;
 }
-main .project .web { background: lightcoral;
-    width: 1300px; height: 960px;
+main .project .web {width: 1200px; height: 960px; margin: 0 auto;
 }
 main .project .web h3 {}
-main .project .web .web_all {background: lightblue;}
-main .project .web .swiper-container {background: lightgreen;}
+main .project .web .web_all {}
+main .project .web .swiper-container {background: lightgreen;
+position: relative;
+
+}
 main .project .web .swiper-container .swiper {}
 main .project .web .swiper-container .swiper .swiper-wrapper {}
 
