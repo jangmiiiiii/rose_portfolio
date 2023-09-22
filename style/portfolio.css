@@ -305,7 +305,7 @@ main #sns_popup { background: rgba(0, 0, 0, 0.699);
 }
 main #sns_popup > .contents {
     background: aqua;
-    width: 500px; height: 550px;
+    width: 700px; height: 700px;
     position: relative; top: 50%; left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -425,7 +425,7 @@ main #detail_popup {  background: rgba(0, 0, 0, 0.699);
     position: fixed; top:0 ; left: 0;
 }
 main #detail_popup > .contents {
-    width: 650px; height: 700px;
+    width: 600px; height: 700px;
     position: relative; top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     overflow-y:auto;
