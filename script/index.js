@@ -35,6 +35,11 @@ const cardl_swiper = new Swiper('#card_slidel', {
 const web_swiper = new Swiper('#web_slide', {
     slidesPerView:1,
     spaceBetween:30,
+    //페이지 이전/다음 버튼
+    navigation: {
+        prevEl: '#web_btn1',
+        nextEl: '#web_btn2',
+    },
 })
 //web project slide 끝
 
@@ -160,3 +165,4 @@ detail_popup.addEventListener('click',function(){
     detail_popup.style.display = 'none'
 })
 //banner 팝업 끝
+

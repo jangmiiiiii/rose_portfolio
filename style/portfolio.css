@@ -356,13 +356,14 @@ main #banner_design .banner > .contents {
 
 }
 main #banner_design .banner > .contents  a:hover {
-    background-size: 110% auto;
+    background-size: 110%;   
 }
 main #banner_design .banner > .contents  a {
+    transition:all 0.5s linear;
     display: block;
     width: 590px; height: 225px;    
     border-radius:20px ;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
@@ -532,7 +533,7 @@ main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide
     width: 500px; height: 430px;
 }
 main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide > .project_slide1 {    
-    width:477px; height:267PXx; 
+    width:477px; height:267Px; 
     position:absolute; top:10px; left:11px; 
     border-radius:5px; border:2px solid #d4d4d4; 
     box-sizing: border-box;
@@ -572,22 +573,40 @@ main .project .web .swiper-container .swiper #hanwha #project_web1  .project_inf
 main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents h1 {}
 main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents ul {
     padding-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
 }
-main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li {
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents ul li {
     display: flex;
     padding-bottom: 20px;
+
 }
-main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li .title {
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents ul li .title_hanwha {
+    font-family: 'montregular';
+    font-size: 1.333rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-left: -5px;
+    letter-spacing: 0.05rem;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents ul li p {
+    line-height: 20px;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li:nth-child(3) .info {
+    line-height: 27px;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents ul li .title {
     font-family: 'montregular' ;
     font-weight: 600;
     width: 95px;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.2rem;
 }
-main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li:last-child > .title { 
-    font-family: 'montregular' ;
-    font-weight: 600;
-    width: 95px;
-    letter-spacing: 0.0rem;
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li:first-child > .title {
+    letter-spacing: 0.4rem;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li:last-child > .title {
+
+    letter-spacing: 0.08rem;
 
 }
 main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li:first-child .info{
@@ -604,7 +623,9 @@ main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info
 main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info .link  a:hover {
     background: #f17121;
     color: #fff;
-    transform: scale(1.05);
+    transform:scale(1.05);
+    transition:all 0.5s linear;
+    border: none;
 }
 main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info .link  a {background: rgb(255, 255, 255);
     font-family: 'montrebold';
@@ -621,3 +642,92 @@ main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info
 main .project .web .swiper-container .swiper #hanwha #project_web1 h1 .project_info  .link a:first-child {}
 main .project .web .swiper-container .swiper #hanwha #project_web1 h1 .project_info  .link a:nth-child(2) {}
 main .project .web .swiper-container .swiper #hanwha #project_web1 h1 .project_info  .link a:last-child {}
+
+/* hanwha 끝 */
+/* apc 시작 */
+main .project .web .swiper-container .swiper #apc {}
+main .project .web .swiper-container .swiper #apc #project_web2 {
+    
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project { 
+    width: 1100px; margin: 0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project .com_apc {}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project .com_apc .comp {
+    width: 500px; height: 430px;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project .com_apc .apc_img {
+    width:477px; height:267px; 
+    position:absolute; top:11px; left:34px; 
+    border-radius:5px; border:2px solid #d4d4d4; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents {}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents ul {
+    padding-top: 50px;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents ul li {
+    display: flex;
+    padding-bottom: 20px;
+    font-family: 'montregular' ;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents ul li .title_apc {
+font-family: 'montregular';
+font-size: 1.333rem;
+font-weight: 600;
+padding-bottom: 20px;
+margin-left: -5px;
+letter-spacing: 0.05rem;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents ul li p {
+    line-height: 20px;    font-family: 'montregular' ;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents li:nth-child(3) .info {
+    line-height: 27px;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents ul li .title {
+    font-family: 'montregular' ;
+    font-weight: 600;
+    width: 95px;
+    letter-spacing: 0.2rem;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents ul li:first-child > .title {
+    letter-spacing: 0.4rem;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .project_contents ul li:last-child > .title {
+    letter-spacing: 0.08rem;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .link {    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .link a:hover {
+    background: #ff4eaf;
+    color: #fff;
+    transform:scale(1.05);
+    transition:all 0.5s linear;
+    border: none;
+}
+main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .link a {
+    font-family: 'montrebold';
+    font-weight: 600;
+    width: 150px; 
+    padding: 15px 0;
+    border: 2px solid  #ff4eaf;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    color:  #ff4eaf;
+}
+/* apc 끝 */
