@@ -2,6 +2,27 @@ body, html {scroll-behavior: smooth;}
 /* 반응형 대비 최소 제한 너비 설정 */
 header, main {min-width: 900px;}
 
+/* button */
+.swiper-button-prev {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url();
+    position: absolute;
+    top: 600px ;
+    width: 50px; height: 50px ;
+}
+.swiper-button-next {
+    background-image: url();
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 600px; left: 59px;
+    width: 50px; height: 50px;
+}
+.swiper-button-prev::after,.swiper-button-next::after {/* display: none; */
+color: #222;
+}
+
 /* 스크롤바 */
 ::-webkit-scrollbar {width: 10px;}/* /스크롤바 크기/ */
 ::-webkit-scrollbar-track {border-radius: 5px; background-color: #fff; box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.527);}/* /스크롤바 배경/ */
@@ -21,6 +42,7 @@ header, main {min-width: 900px;}
     /* 필수속성:마우스 따라다니는 이미지 만들경우 */
     /* (위)링크, 버튼 등 선택이 안되는 문제해결 */
     pointer-events:none;
+
 }
 
 
@@ -49,7 +71,7 @@ header nav .gnb a {
 }
 
 /* #home */
-main {}
+main { background: rgb(245, 245, 245);  }
 /* main > * {padding: 0 300px;} main의 모든 자식요소들  */
 main #home { 
     width:1920px; height: 960px; margin: 0 auto;
@@ -179,6 +201,7 @@ main #profile .container .profile_txt .profile_right ul > li > h3 {
     font-size: 1.25rem;
     font-weight: 700;
     padding-bottom: 25px;
+    font-family: montreguler;
     color: #266C9F;
 }
 main #profile .container .profile_txt .profile_right .left {
@@ -193,7 +216,9 @@ main #profile .container .profile_txt .profile_right .left .aboutme ul > li {
 }
 main #profile .container .profile_txt .profile_right .left .aboutme ul > li > p {
     padding-right:20px ;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: montreguler;
+    letter-spacing: 0.05rem;
 }
 main #profile .container .profile_txt .profile_right .left .aboutme ul li span {}
 main #profile .container .profile_txt .profile_right .all .left .certificare > ul {}
@@ -203,7 +228,7 @@ main #profile .container .profile_txt .profile_right .all .left .certificare > u
 main #profile .container .profile_txt .profile_right .all .left .certificare > ul > li > p {
     font-size:0.9rem ;
     color: #777;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 main #profile .container .profile_txt .profile_right .all .left .certificare > ul > li > span {
     font-weight: 700;
@@ -224,7 +249,7 @@ main #profile .container .profile_txt .right li > ul > li {
 main #profile .container .profile_txt .right li > ul > li > p { 
     font-size:0.9rem ;
     color: #777;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 main #profile .container .profile_txt .right li > ul > li > span {
     font-weight: 700;
@@ -236,9 +261,10 @@ main #profile .container .profile_txt .right .experience > ul > li:last-child {
 main #profile .container .profile_txt .skill {}
 main #profile .container .profile_txt .skill h3 {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 25px;
     color: #266C9F;
+    font-family: montreguler;
 }
 main #profile .container .profile_txt .skill ul {
     display: flex;
@@ -252,7 +278,7 @@ main #profile .container .profile_txt .skill ul li img {}
 
 /* design */
 
-main .design {   
+main .design {
 }
 main  h2 {/* background: wheat; */
     font-size: 4.375rem;
@@ -280,7 +306,8 @@ main #sns_popup { background: rgba(0, 0, 0, 0.699);
 main #sns_popup > .contents {
     background: aqua;
     width: 500px; height: 550px;
-    margin: 150px auto;
+    position: relative; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
 }
 main #sns_popup > .contents > img {
     width: 100%; height: 100%;
@@ -343,7 +370,8 @@ main #banner_popup { background: rgba(0, 0, 0, 0.699);
 main #banner_popup > .contents {
     background: aqua;
     width: 1000px; height: 400px;
-    margin: 150px auto;
+    position: relative; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
 }
 main #banner_popup > .contents > img {
     width: 100%; height: 100%;
@@ -398,7 +426,8 @@ main #detail_popup {  background: rgba(0, 0, 0, 0.699);
 }
 main #detail_popup > .contents {
     width: 650px; height: 700px;
-    margin: 130px auto;
+    position: relative; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
     overflow-y:auto;
     
 }
@@ -514,8 +543,8 @@ main .project {/* background: wheat; */
     width:100%; height: 960px;
 }
 main .project .web { background: rgba(173, 216, 230, 0.452);
-    width: 100%; height: 400px; margin: 0 -50px;
-    border-radius: 0 500px 0 0;
+    width: 100%; height: 500px; margin: 0 auto;
+
 }
 main .project h3 {
     font-size: 4.375rem;
@@ -525,8 +554,9 @@ main .project h3 {
     letter-spacing: 2px;
     width: 1300px; margin: 0 auto;
 }
-main .project .web .web_all {background: rgb(255, 255, 255);
+main .project .web .web_all {/* background: rgb(255, 255, 255); */
     width: 1100px; height: 100%; margin: 0 auto;
+    padding-top:50px;
 }
 main .project .web .swiper-container {
 position: relative;
@@ -643,7 +673,7 @@ main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info
     transition:all 0.5s linear;
     border: none;
 }
-main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info .link  a {background: rgb(255, 255, 255);
+main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info .link  a {
     font-family: 'montrebold';
     font-weight: 600;
     width: 150px; 
