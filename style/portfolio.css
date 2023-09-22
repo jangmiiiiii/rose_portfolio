@@ -237,14 +237,15 @@ main #profile .container .profile_txt .skill ul li img {}
 
 /* design */
 
-main .design {
+main .design {   
 }
-main .design h2 {
+main  h2 {background: wheat;
     font-size: 4.375rem;
     color: #266C9F;
     font-family: abril;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     letter-spacing: 2px;
+    width: 1300px; margin: 0 auto;
 }
 main .design > div > h3 {
     font-size: 2.5rem;
@@ -492,16 +493,26 @@ main #cardnews_design .cardr #card_slider .card_contents > .slide3 {background-i
 main #cardnews_design .cardr #card_slider .card_contents > .slide4 {background-image: url(../images/sns_design/sns4.jpg);}
 
 /* #project_web1 */
-main .project {background: wheat;
+main .project {/* background: wheat; */
     width:100%; height: 960px;
 }
-main .project .web {width: 1200px; height: 960px; margin: 0 auto;
+main .project .web { background: rgba(173, 216, 230, 0.452);
+    width: 100%; height: 400px; margin: 0 -50px;
+    border-radius: 0 500px 0 0;
 }
-main .project .web h3 {}
-main .project .web .web_all {}
+main .project h3 {
+    font-size: 4.375rem;
+    color: #266C9F;
+    font-family: abril;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    width: 1300px; margin: 0 auto;
+}
+main .project .web .web_all {background: rgb(255, 255, 255);
+    width: 1100px; height: 100%; margin: 0 auto;
+}
 main .project .web .swiper-container {
 position: relative;
-
 }
 main .project .web .swiper-container .swiper {}
 main .project .web .swiper-container .swiper .swiper-wrapper {}
@@ -551,7 +562,7 @@ main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide
 main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide .project_slide1 .project_hanwha .slide_img5 {background-image: url(../images/web_project/hanwha5.jpg);}
 
 
-main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info {background: lime;
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info {/* background: lime; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -576,7 +587,7 @@ main .project .web .swiper-container .swiper #hanwha #project_web1  .project_inf
     font-family: 'montregular' ;
     font-weight: 600;
     width: 95px;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.0rem;
 
 }
 main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li:first-child .info{
@@ -588,7 +599,7 @@ main .project .web .swiper-container .swiper #hanwha #project_web1  .project_inf
 main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info  .link {/* background: lightsalmon; */
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info .link  a:hover {
     background: #f17121;
