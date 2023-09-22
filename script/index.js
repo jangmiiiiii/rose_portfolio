@@ -1,3 +1,12 @@
+        //마우스 움직일 때 이벤트
+        const mouseImg = document.querySelector('#mouse')
+        console.log(mouseImg)
+        window.addEventListener('mousemove',function(e){ //매개변수e 를 작성시 마우스 움직일때 움직이는 정보가 담김
+            // console.log(e)
+            mouseImg.style.left = `${e.clientX}px`
+            mouseImg.style.top = `${e.clientY}px`
+        })
+
 // detail design slide 시작
 var mySwiper = new Swiper('#detail_slide ', {
     slidesPerView:2,
