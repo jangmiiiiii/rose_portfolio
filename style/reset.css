@@ -24,6 +24,18 @@
     font-family: '소미체';
     src: url(../font/나눔손글씨\ 소미체.TTF);
 }
+@font-face {
+    font-family: 'montbold';
+    src: url(../font/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'montregular';
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'montlight';
+    src: url(../font/Montserrat-Light.ttf);
+}
 /* reset.css */
 html,body, /*구조태그*/
 h1,h2,h3,h4,h5,h6,p,blockquote,address, /*block*/

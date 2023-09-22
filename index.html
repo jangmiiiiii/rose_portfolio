@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <style>
-        /* sns 팝업시작 */
-        #popup {
+        /* sns 팝업시작  - 강사님 */
+        /* #popup {
             position:fixed; left:0; top:0;
             width:100%; height:100vh;
             z-index:999;
@@ -27,7 +27,7 @@
             width:900px; height:900px;
             background:aqua; margin:400px auto ;
         }
-        #popup .contents img {width:100%;}
+        #popup .contents img {width:100%;} */
         /* sns 팝업 끝 */
     </style>
 </head>
@@ -151,15 +151,24 @@
                 </div>
             </div>
         </section>
-        <!-- 팝업 sns -->
-        <div id="popup" class="popup_sns">
+        <!-- 팝업 sns - 강사님-->
+        <!-- <div id="popup" class="popup_sns">
             <div class="contents">
                 <img src="" alt="">
             </div>
-        </div>
+        </div> -->
         <!-- 팝업 sns 끝 -->
         <h2>DESIGN</h2>
+<!--1. sns -->
         <section class="design" id="sns_design">
+            <!-- sns팝업 시작 -->
+            <div class="popup" id="sns_popup">
+                <div class="contents">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <!-- sns팝업 끝 -->
+            <p class="sns_popup_bg"></p>
             <div class="sns">
                 <h3>SNS DESIGN</h3>
                 <div class="contents">
@@ -174,7 +183,15 @@
                 </div>
             </div>
         </section>
+<!--2. banner -->
         <section class="design" id="banner_design">
+            <!-- banner 팝업 시작 -->
+            <div class="popup" id="banner_popup">
+                <div class="contents">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <!-- banner 팝업 끝 -->
             <div class="banner">
                 <h3>BANNER DESIGN</h3>
                 <div class="contents">
@@ -185,17 +202,24 @@
                 </div>
             </div>
         </section>
-
+<!--3. detail -->
         <section class="design" id="detail_design">
+            <!-- detail 팝업 시작 -->
+            <div class="popup" id="detail_popup">
+                <div class="contents">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <!-- detail 팝업 끝 -->
             <div class="detail">
                 <h3>DETAIL DESIGN</h3>
                 <div class="swiper-container detail_all">
                     <div class="swiper" id="detail_slide">
                         <div class="swiper-wrapper detail_contents">
-                            <div class="swiper-slide slide1"></div>
-                            <div class="swiper-slide slide2"></div>
-                            <div class="swiper-slide slide3"></div>
-                            <div class="swiper-slide slide4"></div>
+                            <div class="swiper-slide slide1"><a href="" class="detail1"></a></div>
+                            <div class="swiper-slide slide2"><a href="" class="detail2"></a></div>
+                            <div class="swiper-slide slide3"><a href="" class="detail3"></a></div>
+                            <div class="swiper-slide slide4"><a href="" class="detail4"></a></div>
                         </div>
                     </div>
                     <!--필요 시 사용(선택)-->
@@ -204,6 +228,7 @@
                 </div>
             </div>
         </section>
+<!--4. cardnews -->
             <!-- 카드뉴스 시작 -->
         <section class="design" id="cardnews_design">
             <div class="cardnews">
@@ -238,7 +263,7 @@
                 </div>
             </div>
         </section>
-
+<!--5. web project-->
         <!-- web project 시작 -->
         <section class="project">
             <div class="web">
@@ -246,53 +271,58 @@
                 <div class="swiper-container web_all">
                     <div class="swiper" id="web_slide">
                         <div class="swiper-wrapper web_contents">
-                            <!-- apc 시작 -->
-                            <div class="swiper-slide slide1" id="apc"> <!-- web 슬라이드 1 -->
+                        <!-- hanwha 시작 -->
+                            <div class="swiper-slide slide1" id="hanwha"> <!-- web 슬라이드 1 -->
                                 <div id="project_web1">
-                                    <h1>아페세d</h1>
-                                    <div class="apc_slide"> <!-- 컴퓨터 미리보기 시작 -->
+                                    <div class="hanwha_slide"> <!-- 컴퓨터 미리보기 시작 -->
                                         <img src="./images/ct-com.png" alt="">
                                         <div class="swiper project_slide1">
-                                            <div class="swiper-wrapper project_apc">
-                                                <div class="swiper-slide slide1 apc_img slide_img1"></div>
-                                                <div class="swiper-slide slide2 apc_img slide_img2"></div>
-                                                <div class="swiper-slide slide3 apc_img slide_img3"></div>
-                                                <div class="swiper-slide slide4 apc_img slide_img4"></div>
-                                                <div class="swiper-slide slide5 apc_img slide_img5"></div>
+                                            <div class="swiper-wrapper project_hanwha">
+                                                <div class="swiper-slide slide1 hanwha_img slide_img1"></div>
+                                                <div class="swiper-slide slide2 hanwha_img slide_img2"></div>
+                                                <div class="swiper-slide slide3 hanwha_img slide_img3"></div>
+                                                <div class="swiper-slide slide4 hanwha_img slide_img4"></div>
+                                                <div class="swiper-slide slide5 hanwha_img slide_img5"></div>
                                             </div>
-                                        </div>
                                         </div>
                                     </div>
                                     <div class="project_info">
                                         <div class="project_contents">
-                                            <dl>
-                                                <dt>TYPE</dt>
-                                                <dd>Desktop 1920  |  Tablet 1024  | Mobile 480 구성</dd>
-                                                <dt>PAGE</dt>
-                                                <dd>index/login/board/product/map 총 5페이지</dd>
-                                                <dt>TOOL</dt>
-                                                <dd>photoshop | illustrator | HTML5 | CSS3 |
-                                                    Javascript | php | gnuboard |git</dd>
-                                                <dt>제작기간</dt>
-                                                <dd> 40시간 , 개인 100% 작업</dd>
-                                            </dl>
+                                            <ul>
+                                                <li>
+                                                    <p class="title">SITE</p>
+                                                    <p class="info">한화 (Hanwha)</p>
+                                                </li>
+                                                <li>
+                                                    <p class="title">PAGE</p>
+                                                    <p class="info">Full page (section*5)</p>
+                                                </li>
+                                                <li>
+                                                    <p class="title">TOOL</p>
+                                                    <p class="info">photoshop | illustrator | HTML5 | CSS3 |Javascript | git</p>
+                                                </li>
+                                                <li>
+                                                    <p class="title">제작기간</p>
+                                                    <p class="info"> 40시간 , 개인 100% 작업</p>
+                                                </li>
+                                            </ul>
                                         </div>
+                                        <div class="link">
+                                            <a href="http://roz-design.pe.kr/porfolio_apc/index.html" target="_blank">WEB</a>
+                                            <a href="https://www.figma.com/file/K4S9RUB5EMOi4F1qIHmhK7/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023?type=design&node-id=0%3A1&mode=design&t=KcM9Nlq4l9VWdlkB-1" target="_blank">FIGMA</a>
+                                            <a href="https://www.figma.com/proto/EevzpvcfptzQgmwK2Sb9Wi/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023-%EA%B2%B0%EA%B3%BC%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=0-1&viewport=693%2C-143%2C0.13&t=3qb9GSQVGw8VG4Rz-1&scaling=scale-down-width&mode=design" target="_blank">기획서</a>
+                                        </div>  
                                     </div>
-                                    <div class="link">
-                                        <a href="http://roz-design.pe.kr/porfolio_apc/index.html" target="_blank">최종프로젝트 결과보기</a>
-                                        <a href="https://www.figma.com/proto/EevzpvcfptzQgmwK2Sb9Wi/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023-%EA%B2%B0%EA%B3%BC%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=0-1&viewport=693%2C-143%2C0.13&t=3qb9GSQVGw8VG4Rz-1&scaling=scale-down-width&mode=design" target="_blank">젠틀몬스터 기획서 보기</a>
-                                        <a href="https://www.figma.com/file/K4S9RUB5EMOi4F1qIHmhK7/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023?type=design&node-id=0%3A1&mode=design&t=KcM9Nlq4l9VWdlkB-1" target="_blank">와이어프레임/프로토타입 보기</a>
-                                    </div>  
                                 </div>
                             </div>
-                            <!-- apc 끝 -->
-                            <!-- hanwha 시작 -->
-                            <div class="swiper-slide slide2" id="hanwha">
+                        <!-- hanwha 끝 -->
+                        <!-- apc 시작 -->
+                            <div class="swiper-slide slide2" id="apc">
                                 <div id="project_web2">
                                     <h1>한화</h1>
                                     <div class="project_bg">
                                         <div class="slide project_slide2">
-                                            <div class="slide_contents project_hanwha">
+                                            <div class="slide_contents project_apc">
                                                 <div class="slide1"><img src="./images/web_project/hanwha1.jpg" alt=""></div>
                                                 <div class="slide2"><img src="./images/web_project/hanwha2.jpg" alt=""></div>
                                                 <div class="slide3"><img src="./images/web_project/hanwha3.jpg" alt=""></div>
@@ -315,15 +345,15 @@
                                                 </dl>
                                             </div>
                                         </div>
+                                        <div class="link">
+                                            <a href="http://roz-design.pe.kr/portfolio_hanwha/" target="_blank">최종프로젝트 결과보기</a>
+                                            <a href="https://www.figma.com/proto/EevzpvcfptzQgmwK2Sb9Wi/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023-%EA%B2%B0%EA%B3%BC%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=0-1&viewport=693%2C-143%2C0.13&t=3qb9GSQVGw8VG4Rz-1&scaling=scale-down-width&mode=design" target="_blank">젠틀몬스터 기획서 보기</a>
+                                            <a href="https://www.figma.com/file/K4S9RUB5EMOi4F1qIHmhK7/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023?type=design&node-id=0%3A1&mode=design&t=KcM9Nlq4l9VWdlkB-1" target="_blank">와이어프레임/프로토타입 보기</a>
+                                        </div>  
                                     </div>
-                                    <div class="link">
-                                        <a href="http://roz-design.pe.kr/portfolio_hanwha/" target="_blank">최종프로젝트 결과보기</a>
-                                        <a href="https://www.figma.com/proto/EevzpvcfptzQgmwK2Sb9Wi/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023-%EA%B2%B0%EA%B3%BC%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=0-1&viewport=693%2C-143%2C0.13&t=3qb9GSQVGw8VG4Rz-1&scaling=scale-down-width&mode=design" target="_blank">젠틀몬스터 기획서 보기</a>
-                                        <a href="https://www.figma.com/file/K4S9RUB5EMOi4F1qIHmhK7/%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-2023?type=design&node-id=0%3A1&mode=design&t=KcM9Nlq4l9VWdlkB-1" target="_blank">와이어프레임/프로토타입 보기</a>
-                                    </div>  
                                 </div>
                             </div>
-                            <!-- hanwha 끝 -->
+                        <!-- apc 끝 -->
                         </div>
                     </div>
                     <!--슬라이드 버튼-->
@@ -332,12 +362,10 @@
                 </div>
             </div>
         </section>
-
-
     </main>
     <script src="./script/index.js"></script>
-    <script>
-        // sns 팝업 시작
+<!--     <script>
+        sns 팝업 시작 - 강사님
         const popup = document.querySelector('#popup')
         const popup_img = document.querySelector('#popup img')
         const sns_a = document.querySelectorAll('.sns a')
@@ -364,7 +392,7 @@
         popup.addEventListener('click',function(){
             popup.style.display = 'none'
         })
-        //sns 팝업 끝
-    </script>
+        sns 팝업 끝
+    </script> -->
 </body> 
 </html>

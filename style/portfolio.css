@@ -1,6 +1,14 @@
 body, html {scroll-behavior: smooth;}
 /* 반응형 대비 최소 제한 너비 설정 */
 header, main {min-width: 900px;}
+
+/* 스크롤바 */
+::-webkit-scrollbar {width: 10px;}/* /스크롤바 크기/ */
+::-webkit-scrollbar-track {border-radius: 5px; background-color: #fff; box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.527);}/* /스크롤바 배경/ */
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}/* /스크롤 드래그바/ */
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+
+
 /* header */
 header {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.10) 100%);
@@ -247,6 +255,21 @@ main .design > div > h3 {
     padding-bottom: 50px;
 }
 main .design > div > div {}
+
+/* sns popup */
+main #sns_popup { background: rgba(0, 0, 0, 0.699);
+    width: 100%; height:100%;
+    z-index: 998;
+    position: fixed; top:0 ; left: 0;
+}
+main #sns_popup > .contents {
+    background: aqua;
+    width: 500px; height: 550px;
+    margin: 150px auto;
+}
+main #sns_popup > .contents > img {
+    width: 100%; height: 100%;
+}
 /* sns */
 main #sns_design {}
 main #sns_design .sns { /* background: lightblue; */
@@ -293,6 +316,21 @@ main #sns_design .sns > .contents .sns5 {background-image: url(../images/sns_des
 main #sns_design .sns > .contents .sns6 {background-image: url(../images/sns_design/sns6.jpg);}
 main #sns_design .sns > .contents .sns7 {background-image: url(../images/sns_design/sns7.jpg);}
 main #sns_design .sns > .contents .sns8 {background-image: url(../images/sns_design/sns8.jpg);}
+
+/* banner popup */
+main #banner_popup { background: rgba(0, 0, 0, 0.699);
+    width: 100%; height:100%;
+    z-index: 998;
+    position: fixed; top:0 ; left: 0;
+}
+main #banner_popup > .contents {
+    background: aqua;
+    width: 1000px; height: 400px;
+    margin: 150px auto;
+}
+main #banner_popup > .contents > img {
+    width: 100%; height: 100%;
+}
 /* banner*/
 main #banner_design { /* background: wheat; */
     width:100%; height: 960px; margin: 0 auto; 
@@ -319,7 +357,7 @@ main #banner_design .banner > .contents {
 main #banner_design .banner > .contents  a:hover {
     background-size: 110% auto;
 }
-main #banner_design .banner > .contents  a {background-color: darkgrey;
+main #banner_design .banner > .contents  a {
     display: block;
     width: 590px; height: 225px;    
     border-radius:20px ;
@@ -328,13 +366,28 @@ main #banner_design .banner > .contents  a {background-color: darkgrey;
     background-position: center;
     margin-bottom: 30px;
     box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.25);
-    
-    
-}
+    }
 main #banner_design .banner > .contents .banner1 {background-image: url(../images/banner_design/banner1.jpg);}
 main #banner_design .banner > .contents .banner2 {background-image: url(../images/banner_design/banner2.jpg);}
 main #banner_design .banner > .contents .banner3 {}
 main #banner_design .banner > .contents .banner4 {}
+
+/* detail popup */
+main #detail_popup {  background: rgba(0, 0, 0, 0.699);
+    width: 100%; height:100%;
+    z-index: 998;
+    position: fixed; top:0 ; left: 0;
+}
+main #detail_popup > .contents {
+    width: 650px; height: 700px;
+    margin: 130px auto;
+    overflow-y:auto;
+    
+}
+main #detail_popup > .contents > img {
+    width: 100%; 
+    text-align: center;
+}
 
 /* detail*/
 main #detail_design {/* background: rgb(179, 245, 184); */
@@ -370,9 +423,9 @@ main #detail_design .detail .detail_all .detail_contents .swiper-slide {
 
 
 
-main #detail_design .detail .detail_all .detail_contents .slide1 {background-image: url(../images/detail_design/detail1.jpg);}
-main #detail_design .detail .detail_all .detail_contents .slide2 {background-image: url(../images/detail_design/detail2.jpg)}
-main #detail_design .detail .detail_all .detail_contents .slide3 {background-image: url(../images/detail_design/detail3.jpg)}
+main #detail_design .detail .detail_all .detail_contents .slide1 { background-image: url(../images/detail_design/detail1.jpg);}
+main #detail_design .detail .detail_all .detail_contents .slide2 {background-image: url(../images/detail_design/detail2.jpg);}
+main #detail_design .detail .detail_all .detail_contents .slide3 {background-image: url(../images/detail_design/detail3.jpg);}
 main #detail_design .detail .detail_all .detail_contents .slide4 {}
 
 /* cardnews*/
@@ -453,50 +506,107 @@ position: relative;
 main .project .web .swiper-container .swiper {}
 main .project .web .swiper-container .swiper .swiper-wrapper {}
 
-/* apc */
-main .project .web .swiper-container .swiper #apc {}
-main .project .web .swiper-container .swiper #apc #project_web1 {}
-main .project .web .swiper-container .swiper #apc #project_web1 h1 {}
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide {position: relative;} /* 컴퓨터 미리보기 시작 */
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide img { background: aqua;
-    width: 450px; height: 387px;
+/* hanwha */
+main .project .web .swiper-container .swiper #hanwha {}
+main .project .web .swiper-container .swiper #hanwha #project_web1 {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
 }
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide > .project_slide1 {    
-    width:428px; height:241px; 
+/* 한화 컴퓨터 미리보기 시작 */
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide {
+    position: relative; 
+} 
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide img {/*  background: aqua; */
+    width: 500px; height: 430px;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide > .project_slide1 {    
+    width:477px; height:267PXx; 
     position:absolute; top:10px; left:11px; 
-    border-radius:3px; border:2px solid #d4d4d4; 
+    border-radius:5px; border:2px solid #d4d4d4; 
     box-sizing: border-box;
     overflow: hidden;
 }
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc { 
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide .project_slide1 .project_hanwha { 
     position: relative;
-    width: 428px; height: 241px;
+    width: 477px; height: 267px;
     z-index: 1;
     display: flex;
     
     
     transition-duration: 1300ms;
     transform: translate3d(0px, -1185px, 0px);
-
-
+    
+    
 }
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .apc_img {    
-    width: 428px; height: 241px;
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide .project_slide1 .project_hanwha .hanwha_img {    
+    width: 477px; height: 267Px;
     background-size: cover; 
     display: block;
 }
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img1 {background-image: url(../images/web_project/hanwha1.jpg);}
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img2 {background-image: url(../images/web_project/hanwha2.jpg);}
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img3 {background-image: url(../images/web_project/hanwha3.jpg);}
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img4 {background-image: url(../images/web_project/hanwha4.jpg);}
-main .project .web .swiper-container .swiper #apc #project_web1 .apc_slide .project_slide1 .project_apc .slide_img5 {background-image: url(../images/web_project/hanwha5.jpg);}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide .project_slide1 .project_hanwha .slide_img1 {background-image: url(../images/web_project/hanwha1.jpg);}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide .project_slide1 .project_hanwha .slide_img2 {background-image: url(../images/web_project/hanwha2.jpg);}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide .project_slide1 .project_hanwha .slide_img3 {background-image: url(../images/web_project/hanwha3.jpg);}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide .project_slide1 .project_hanwha .slide_img4 {background-image: url(../images/web_project/hanwha4.jpg);}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .hanwha_slide .project_slide1 .project_hanwha .slide_img5 {background-image: url(../images/web_project/hanwha5.jpg);}
 
-main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info {}
-main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info .project_contents {}
-main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info .project_contents dl {}
-main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info .project_contents dl dt {}
-main .project .web .swiper-container .swiper #apc #project_web1 .project_bg .project_info .project_contents dl dd {}
-main .project .web .swiper-container .swiper #apc #project_web1 .link {
-    
+
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info {background: lime;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+
 }
-main .project .web .swiper-container .swiper #apc #project_web1 h1 .link a {}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents {}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents h1 {}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents ul {
+    padding-top: 50px;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li {
+    display: flex;
+    padding-bottom: 20px;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li .title {
+    font-family: 'montregular' ;
+    font-weight: 600;
+    width: 95px;
+    letter-spacing: 0.15rem;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li:last-child > .title { 
+    font-family: 'montregular' ;
+    font-weight: 600;
+    width: 95px;
+    letter-spacing: 0.05rem;
+
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li:first-child .info{
+    font-weight: 600;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1  .project_info .project_contents li > .info {
+    font-family: 'montregular';
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info  .link {/* background: lightsalmon; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info .link  a:hover {
+    background: #f17121;
+    color: #fff;
+    transform: scale(1.05);
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info .link  a {background: rgb(255, 255, 255);
+    font-family: 'montrebold';
+    font-weight: 600;
+    width: 150px; 
+    padding: 15px 0;
+    border: 2px solid #F17221;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    color: #F17221;
+}
+main .project .web .swiper-container .swiper #hanwha #project_web1 h1 .project_info  .link a:first-child {}
+main .project .web .swiper-container .swiper #hanwha #project_web1 h1 .project_info  .link a:nth-child(2) {}
+main .project .web .swiper-container .swiper #hanwha #project_web1 h1 .project_info  .link a:last-child {}
