@@ -94,7 +94,7 @@ sns_list[2].addEventListener('click',function(e){
 sns_list[3].addEventListener('click',function(e){
     e.preventDefault()
     sns_popup.style.display = 'block'
-    sns_img.src = '../images/sns_design/sns4.jpg'
+    sns_img.src = '../images/sns_design/sns9.jpg'
 })
 sns_list[4].addEventListener('click',function(e){
     e.preventDefault()
@@ -114,7 +114,7 @@ sns_list[6].addEventListener('click',function(e){
 sns_list[7].addEventListener('click',function(e){
     e.preventDefault()
     sns_popup.style.display = 'block'
-    sns_img.src = '../images/sns_design/sns8.jpg'
+    sns_img.src = '../images/sns_design/sns4.jpg'
 })
 // ------------------- sns 팝업 창 닫기
 sns_popup.addEventListener('click',function(){
