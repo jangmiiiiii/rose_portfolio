@@ -710,7 +710,7 @@ main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info
 main .project .web .swiper-container .swiper #hanwha #project_web1 .project_info .link  a:hover {
     background: #f17121;
     color: #fff;
-    transform:scale(1.05);
+    transform:scale(1);
     transition:all 0.5s linear;
     border: none;
 }
@@ -801,7 +801,7 @@ main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .
 main .project .web .swiper-container .swiper #apc #project_web2 .apc_project > .project_info .link a:hover {
     background: #ff4eaf;
     color: #fff;
-    transform:scale(1.05);
+    transform:scale(1);
     transition:all 0.5s linear;
     border: none;
 }
