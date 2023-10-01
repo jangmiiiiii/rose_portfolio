@@ -367,7 +367,7 @@ main #sns_design .sns { /* background: lightblue; */
 main .design .sns h3 {}
 main #sns_design .sns > .contents:hover {
     filter: grayscale(0);
-    transition: all 0.5s linear;
+    transition:all 0.5s linear;
 }
 main #sns_design .sns > .contents {
     width: 100%;
@@ -382,15 +382,15 @@ main #sns_design .sns > .contents a:hover {
     background-size: 105%;
 }
 main #sns_design .sns > .contents a {
+    transition:all 0.5s linear;
     display: block;
     width: 280px; height: 280px; background-color: rgb(179, 172, 172);
-    margin-bottom: 30px;
     border-radius:20px ;
-    background-size: cover;
+    background-size: 100%; /* 전체 블랙으로 시작하려면 background-size:cover; 로 해놓기 */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
+    margin-bottom: 30px;
     box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.25);
-    /* filter: grayscale(100%); */
 
 }
 main #sns_design .sns > .contents .sns1 {background-image: url(../images/sns_design/sns1.jpg);}
@@ -433,22 +433,27 @@ main #banner_design .banner h3 {
     display: flex;
     align-self: flex-end;
 }
+main #banner_design .banner > .contents:hover {
+    filter: grayscale(0);
+    transition:all 0.5s linear;
+}
 main #banner_design .banner > .contents {
     width: 1200px; 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    filter: grayscale(100%);
 
 }
 main #banner_design .banner > .contents  a:hover {
-    background-size: 110%;   
+    background-size: 105%;   
 }
 main #banner_design .banner > .contents  a {
     transition:all 0.5s linear;
+    background-size: 100%;
     display: block;
     width: 590px; height: 225px;    
     border-radius:20px ;
-    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
@@ -502,13 +507,16 @@ main #detail_design .detail .detail_all #detail_slide {/* background: lightblue;
 main #detail_design .detail .detail_all #detail_slide .detail_contents {
     width: 850px; height: 670px;
 }
+main #detail_design .detail .detail_all .detail_contents .swiper-slide:hover {
+    background-size:105%;
+}
 main #detail_design .detail .detail_all .detail_contents .swiper-slide {
+    transition:all 0.5s linear;
     width: 350px; height: 650px;
-    background-size: cover;  
+    background-size: 100%;  
     border-radius: 20px;
     box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.25);
 }
-
 
 
 main #detail_design .detail .detail_all .detail_contents .slide1 { background-image: url(../images/detail_design/detail1.jpg);}
