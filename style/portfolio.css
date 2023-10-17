@@ -130,15 +130,15 @@ main #home .homebg .whiterose .flower1 {
     top:0px; left: 0px; */
 }
 main #home .homebg .whiterose .flower2 {
-    animation: rose_move_flower 6s ease-in-out alternate infinite;
-    top: 15px; left: 15px;
+    animation: rose_move_flower 4s ease-in-out alternate infinite;
+    top: 25px; left: 10px;
 }
 main #home .homebg .whiterose .flower3 {
     animation:rose_move_right 6s ease-in-out alternate infinite;
     top: -1px; left: -2px;
 }
 main #home .homebg .whiterose .flower4 {
-    animation:rose_move_right 3s ease-in-out alternate infinite;
+    animation:rose_move_right 5s ease-in-out alternate infinite;
     top: -8px; left: -30px;
 }
 
@@ -154,8 +154,8 @@ main #home .homebg .whiterose .flower img{
     100% {transform: rotate(-1deg)}
 }
 @keyframes rose_move_flower {
-    0% {transform: rotate(5deg)}
-    100% {transform: rotate(-1deg)}
+    0% {transform: rotate(14deg)}
+    100% {transform: rotate(8deg)}
 }
 main #home .homebg .hombtm{}
 main #home .homebg .hombtm p{}
